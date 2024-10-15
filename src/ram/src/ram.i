@@ -57,6 +57,7 @@ generate_ram_netlist_cmd(int bytes_per_word,
   auto* ram_gen = app->getRamGen();
   auto* db = app->getDb();
 
+  // Find the required cells (storage, tristate, and inv)
   odb::dbMaster* storage_cell = nullptr;
   if (storage_cell_name[0] != '\0') {
     storage_cell = db->findMaster(storage_cell_name);
@@ -85,13 +86,15 @@ generate_ram_netlist_cmd(int bytes_per_word,
     if (!inv_cell) {
       app->getLogger()->error(utl::RAM,
                               8,
-                              "Inv cell {} can't be found",
+                              "Inverter cell {} can't be found",
                               inv_cell_name);
     }
   }
 
+  // Find required master cells for logic gates (AND, Clock Gate)
   ram_gen->findMasters();
 
+  // Find AND gates (2-input, 3-input, etc.)
   odb::dbMaster* and2_cell = ram_gen->findMaster(
       [](sta::LibertyPort* port) {
         if (!port->direction()->isOutput()) {
@@ -104,12 +107,36 @@ generate_ram_netlist_cmd(int bytes_per_word,
       },
       "and2");
 
+  // If more input AND gates are needed for the decoder, you can find them similarly
+  odb::dbMaster* and3_cell = ram_gen->findMaster(
+      [](sta::LibertyPort* port) {
+        if (!port->direction()->isOutput()) {
+          return false;
+        }
+        auto function = port->function();
+        return function && function->op() == sta::FuncExpr::op_and;
+      },
+      "and3");
+
   odb::dbMaster* clock_gate_cell = ram_gen->findMaster(
       [](sta::LibertyPort* port) {
         return port->libertyCell()->isClockGate();
       },
       "clock gate");
 
+  // Error handling for missing cells
+  if (!and2_cell) {
+    app->getLogger()->error(utl::RAM,
+                            11,
+                            "AND2 gate cell can't be found");
+  }
+  if (!clock_gate_cell) {
+    app->getLogger()->error(utl::RAM,
+                            13,
+                            "Clock gate cell can't be found");
+  }
+
+  // Now call generate with the correct parameters, passing all the necessary cells
   ram_gen->generate(bytes_per_word, word_count, read_ports,
                     storage_cell, tristate_cell, inv_cell, mask);
 }
