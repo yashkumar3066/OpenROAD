@@ -1,38 +1,3 @@
-/////////////////////////////////////////////////////////////////////////////
-// BSD 3-Clause License
-//
-// Copyright (c) 2023, Precision Innovations Inc.
-// All rights reserved.
-//
-// Redistribution and use in source and binary forms, with or without
-// modification, are permitted provided that the following conditions are met:
-//
-// * Redistributions of source code must retain the above copyright notice, this
-//   list of conditions and the following disclaimer.
-//
-// * Redistributions in binary form must reproduce the above copyright notice,
-//   this list of conditions and the following disclaimer in the documentation
-//   and/or other materials provided with the distribution.
-//
-// * Neither the name of the copyright holder nor the names of its
-//   contributors may be used to endorse or promote products derived from
-//   this software without specific prior written permission.
-//
-// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
-// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-// POSSIBILITY OF SUCH DAMAGE.
-///////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
-
-
 #include "ram/ram.h"
 #include "db_sta/dbNetwork.hh"
 #include "layout.h"
@@ -40,8 +5,12 @@
 #include "sta/Liberty.hh"
 #include "sta/PortDirection.hh"
 #include "utl/Logger.h"
-
 #include <cmath>  // For std::ceil and std::log2
+#include <functional>
+#include <limits>
+#include <memory>
+#include <vector>
+#include <array>
 
 namespace ram {
 
@@ -56,10 +25,17 @@ using std::array;
 
 RamGen::RamGen()
     : db_(nullptr),
+      block_(nullptr),
+      network_(nullptr),
       logger_(nullptr),
+      storage_cell_(nullptr),
+      tristate_cell_(nullptr),
+      inv_cell_(nullptr),
+      and2_cell_(nullptr),
+      clock_gate_cell_(nullptr),
       gate_counter_(0),
       net_counter_(0),
-      max_and_inputs_(4) {}  // Initialize counters and max AND inputs
+      max_and_inputs_(2) {}
 
 void RamGen::init(odb::dbDatabase* db, sta::dbNetwork* network, Logger* logger) {
   db_ = db;
@@ -78,7 +54,7 @@ dbInst* RamGen::makeInst(
   for (auto& [mterm_name, net] : connections) {
     auto mterm = master->findMTerm(mterm_name.c_str());
     if (!mterm) {
-      logger_->error(RAM, 9, "term {} of cell {} not found.", name, master->getName());
+      logger_->error(RAM, 9, "term {} of cell {} not found.", mterm_name, master->getName());
     }
     auto iterm = inst->getITerm(mterm);
     iterm->connect(net);
@@ -200,7 +176,7 @@ void RamGen::generate(const int bytes_per_word,
   const int bits_per_word = bytes_per_word * 8;
   const std::string ram_name = fmt::format("RAM{}x{}", word_count, bits_per_word);
 
-  logger_->info(RAM, 3, "Generating {}", ram_name);
+  logger_->info(RAM, 6, "Generating {}", ram_name);
 
   storage_cell_ = storage_cell;
   tristate_cell_ = tristate_cell;
@@ -219,7 +195,11 @@ void RamGen::generate(const int bytes_per_word,
     block_ = odb::dbBlock::create(chip, ram_name.c_str());
   }
 
-  Layout layout(odb::horizontal);
+  // Horizontal layout to hold both the decoder and RAM block
+  auto main_layout = std::make_unique<Layout>(odb::horizontal);
+
+  // Create the vertical layout for the decoder logic
+  auto decoder_layout = std::make_unique<Layout>(odb::vertical);
 
   auto clock = makeBTerm("clock");
 
@@ -237,43 +217,13 @@ void RamGen::generate(const int bytes_per_word,
     address_nets[i] = makeBTerm(addr_name);
   }
 
-  // Create inverted address nets
-  std::vector<dbNet*> addr_inverted(address_bits);
-  for (int bit = 0; bit < address_bits; ++bit) {
-    auto inv_net_name = fmt::format("addr{}_b", bit);
-    addr_inverted[bit] = makeNet("decoder", inv_net_name);
-    makeInst(
-        &layout,
-        "decoder",
-        fmt::format("inv_addr{}", bit),
-        inv_cell_,
-        {{"A", address_nets[bit]}, {"Y", addr_inverted[bit]}});
-  }
+  // Build decoder outputs
+  std::vector<dbNet*> decoder_outputs = buildDecoder(*decoder_layout, address_nets, word_count);
 
-  // Create decoder outputs
-  std::vector<dbNet*> decoder_outputs(word_count);
-  for (int i = 0; i < word_count; ++i) {
-    auto select_name = fmt::format("word_select[{}]", i);
-    decoder_outputs[i] = makeNet("decoder", select_name);
-  }
+  // Add the vertical decoder layout to the main horizontal layout
+  main_layout->addElement(std::make_unique<Element>(std::move(decoder_layout)));
 
-  // Build decoder logic
-  for (int i = 0; i < word_count; ++i) {
-    std::vector<dbNet*> input_signals;
-    for (int bit = 0; bit < address_bits; ++bit) {
-      bool bit_value = (i >> bit) & 1;
-      if (bit_value) {
-        input_signals.push_back(address_nets[bit]);
-      } else {
-        input_signals.push_back(addr_inverted[bit]);
-      }
-    }
-
-    // Create decoder logic
-    createDecoderLogic(layout, decoder_outputs[i], input_signals);
-  }
-
-  // For each byte in the word
+  // Now create the RAM blocks and attach them horizontally to the right of the decoder
   for (int col = 0; col < bytes_per_word; ++col) {
     array<dbNet*, 8> Di0;
     for (int bit = 0; bit < 8; ++bit) {
@@ -293,59 +243,138 @@ void RamGen::generate(const int bytes_per_word,
     auto column = std::make_unique<Layout>(odb::vertical);
     for (int row = 0; row < word_count; ++row) {
       auto name = fmt::format("storage_{}_{}", row, col);
-      column->addElement(make_byte(name,
-                                   read_ports,
-                                   clock,
-                                   write_enable[col],
-                                   {decoder_outputs[row]},  // Use decoder output
-                                   Di0,
-                                   Do,
-                                   mask));
+      column->addElement(
+          make_byte(name,
+                    read_ports,
+                    clock,
+                    write_enable[col],
+                    {decoder_outputs[row]},
+                    Di0,
+                    Do,
+                    mask));
     }
-    layout.addElement(std::make_unique<Element>(std::move(column)));
+    main_layout->addElement(std::make_unique<Element>(std::move(column)));
   }
-  layout.position(odb::Point(0, 0));
+
+  // Position the main layout with both the decoder and RAM blocks
+  main_layout->position(odb::Point(0, 0));
 }
 
-void RamGen::createDecoderLogic(Layout& layout, dbNet* output_net, const std::vector<dbNet*>& input_nets) {
-  if (input_nets.size() <= max_and_inputs_) {
-    // Create an AND gate with available inputs
-    auto and_gate = getAndGate(input_nets.size());
-    if (!and_gate) {
-      logger_->error(RAM, 12, "No AND gate found for {} inputs.", input_nets.size());
-    }
-    std::vector<std::pair<std::string, dbNet*>> connections;
-    for (int j = 0; j < input_nets.size(); ++j) {
-      connections.push_back({fmt::format("A{}", j), input_nets[j]});
-    }
-    connections.push_back({"X", output_net});
-    makeInst(
-        &layout,
-        "decoder",
-        fmt::format("and_gate_{}", gate_counter_++),
-        and_gate,
-        connections);
-  } else {
-    // Split the inputs and create intermediate nets
-    int mid = input_nets.size() / 2;
-    std::vector<dbNet*> left_inputs(input_nets.begin(), input_nets.begin() + mid);
-    std::vector<dbNet*> right_inputs(input_nets.begin() + mid, input_nets.end());
+std::vector<dbNet*> RamGen::buildDecoder(Layout& parent_layout, const std::vector<dbNet*>& address_nets, int word_count)
+{
+  int address_bits = static_cast<int>(address_nets.size());
+  // Create a top-level horizontal layout for the decoder
+  auto decoder_layout = std::make_unique<Layout>(odb::horizontal);
 
-    // Create intermediate nets
-    dbNet* left_net = makeNet("decoder", fmt::format("intermediate_net_{}", net_counter_++));
-    dbNet* right_net = makeNet("decoder", fmt::format("intermediate_net_{}", net_counter_++));
+  // Create a layout for all inverters
+  auto inv_layout = std::make_unique<Layout>(odb::vertical);
 
-    // Recursively create logic for left and right halves
-    createDecoderLogic(layout, left_net, left_inputs);
-    createDecoderLogic(layout, right_net, right_inputs);
 
-    // Combine left and right nets with an AND gate
-    makeInst(
-        &layout,
-        "decoder",
-        fmt::format("and_gate_{}", gate_counter_++),
-        and2_cell_,
-        {{"A", left_net}, {"B", right_net}, {"X", output_net}});
+  if (word_count == 4 && address_bits == 2) {
+    auto and_layout = std::make_unique<Layout>(odb::vertical);
+    // 2-to-4 decoder
+    auto A0 = address_nets[0];
+    auto A1 = address_nets[1];
+
+    // Inverted signals
+    auto A0_b = makeNet("decoder", "A0_b");
+    auto A1_b = makeNet("decoder", "A1_b");
+
+    // Place the inverters in the inv_layout
+    makeInst(inv_layout.get(), "decoder", "invA0", inv_cell_, {{"A", A0}, {"Y", A0_b}});
+    makeInst(inv_layout.get(), "decoder", "invA1", inv_cell_, {{"A", A1}, {"Y", A1_b}});
+
+    std::vector<dbNet*> outputs(4);
+    outputs[0] = makeNet("decoder", "word_select[0]");
+    outputs[1] = makeNet("decoder", "word_select[1]");
+    outputs[2] = makeNet("decoder", "word_select[2]");
+    outputs[3] = makeNet("decoder", "word_select[3]");
+
+    // Place the AND gates in the and_layout
+    makeInst(and_layout.get(), "decoder", "and0", and2_cell_, {{"A", A1_b}, {"B", A0_b}, {"X", outputs[0]}});
+    makeInst(and_layout.get(), "decoder", "and1", and2_cell_, {{"A", A1_b}, {"B", A0},   {"X", outputs[1]}});
+    makeInst(and_layout.get(), "decoder", "and2", and2_cell_, {{"A", A1},   {"B", A0_b}, {"X", outputs[2]}});
+    makeInst(and_layout.get(), "decoder", "and3", and2_cell_, {{"A", A1},   {"B", A0},   {"X", outputs[3]}});
+
+    // Add the inv_layout and and_layout to the decoder_layout
+    decoder_layout->addElement(std::make_unique<Element>(std::move(inv_layout)));
+    decoder_layout->addElement(std::make_unique<Element>(std::move(and_layout)));
+
+    // Add the completed decoder_layout to the parent_layout
+    parent_layout.addElement(std::make_unique<Element>(std::move(decoder_layout)));
+
+    return outputs;
+
+  }else if (word_count == 8 && address_bits == 3) {
+	  // 3-to-8 decoder
+          auto and_layout = std::make_unique<Layout>(odb::horizontal);
+	  auto A0 = address_nets[0];
+	  auto A1 = address_nets[1];
+	  auto A2 = address_nets[2];
+
+	  // Inverted signals
+	  auto A0_b = makeNet("decoder", "A0_b");
+	  auto A1_b = makeNet("decoder", "A1_b");
+	  auto A2_b = makeNet("decoder", "A2_b");
+
+	  // Place inverters in inv_layout
+	  makeInst(inv_layout.get(), "decoder", "invA0", inv_cell_,
+		   {{"A", A0}, {"Y", A0_b}});
+	  makeInst(inv_layout.get(), "decoder", "invA1", inv_cell_,
+		   {{"A", A1}, {"Y", A1_b}});
+	  makeInst(inv_layout.get(), "decoder", "invA2", inv_cell_,
+		   {{"A", A2}, {"Y", A2_b}});
+
+	  // Prepare output nets
+	  std::vector<dbNet*> outputs(8);
+	  for (int i = 0; i < 8; i++) {
+	    outputs[i] = makeNet("decoder", fmt::format("word_select[{}]", i));
+	  }
+
+	  // Helper lambda for a 3-input AND via two 2-input ANDs.
+	  auto triple_and = [&](Layout* layout_ptr,
+		                const std::string& prefix,
+		                dbNet* in1, dbNet* in2, dbNet* in3,
+		                dbNet* out)
+	  {
+	    auto mid_net = makeNet("decoder", fmt::format("{}_mid", prefix));
+	    makeInst(layout_ptr, "decoder", fmt::format("{}_and1", prefix),
+		     and2_cell_, {{"A", in1}, {"B", in2}, {"X", mid_net}});
+	    makeInst(layout_ptr, "decoder", fmt::format("{}_and2", prefix),
+		     and2_cell_, {{"A", mid_net}, {"B", in3}, {"X", out}});
+	  };
+
+	  // Create two horizontal layouts for the AND gates (top and bottom rows)
+	  auto and_layout_top = std::make_unique<Layout>(odb::vertical);
+	  auto and_layout_bottom = std::make_unique<Layout>(odb::vertical);
+
+	  // Top row: out0..out3
+	  triple_and(and_layout_top.get(), "out0", A2_b, A1_b, A0_b, outputs[0]);
+	  triple_and(and_layout_top.get(), "out1", A2_b, A1_b, A0,   outputs[1]);
+	  triple_and(and_layout_top.get(), "out2", A2_b, A1,   A0_b, outputs[2]);
+	  triple_and(and_layout_top.get(), "out3", A2_b, A1,   A0,   outputs[3]);
+
+	  // Bottom row: out4..out7
+	  triple_and(and_layout_bottom.get(), "out4", A2, A1_b, A0_b, outputs[4]);
+	  triple_and(and_layout_bottom.get(), "out5", A2, A1_b, A0,   outputs[5]);
+	  triple_and(and_layout_bottom.get(), "out6", A2, A1,   A0_b, outputs[6]);
+	  triple_and(and_layout_bottom.get(), "out7", A2, A1,   A0,   outputs[7]);
+
+	  // Add the two horizontal rows to the vertical 'and_layout'
+	  and_layout->addElement(std::make_unique<Element>(std::move(and_layout_top)));
+	  and_layout->addElement(std::make_unique<Element>(std::move(and_layout_bottom)));
+
+	  // Add the inv_layout and and_layout to the decoder_layout (horizontally)
+	  decoder_layout->addElement(std::make_unique<Element>(std::move(inv_layout)));
+	  decoder_layout->addElement(std::make_unique<Element>(std::move(and_layout)));
+
+	  // Add the completed decoder_layout to the parent_layout
+	  parent_layout.addElement(std::make_unique<Element>(std::move(decoder_layout)));
+
+	  return outputs;
+	}else {
+    logger_->error(RAM, 12, "Unsupported decoder configuration (word_count = {}). Only 4 or 8 words are supported.", word_count);
+    return {};
   }
 }
 
@@ -361,11 +390,14 @@ void RamGen::findMasters() {
   if (!tristate_cell_) {
     tristate_cell_ = findMaster(
         [this](sta::LibertyPort* port) {
-          if (!port->direction()->isTristate()) {
+          if (!port->direction()->isOutput()) {
             return false;
           }
           auto function = port->function();
-          return function && function->op() != sta::FuncExpr::op_not;
+          if (!function) {
+            return false;
+          }
+          return function->op() == sta::FuncExpr::op_port && port->direction()->isTristate();
         },
         "tristate");
   }
@@ -378,14 +410,8 @@ void RamGen::findMasters() {
         "and2");
   }
 
-  // Find AND gates with more inputs up to max_and_inputs_
-  for (int i = 3; i <= max_and_inputs_; ++i) {
-    and_cells_[i] = findMaster(
-        [this, i](sta::LibertyPort* port) {
-          return isAndGate(port, i);
-        },
-        fmt::format("and{}", i).c_str());
-  }
+  max_and_inputs_ = 2;
+  and_cells_[2] = and2_cell_;
 
   if (!storage_cell_) {
     storage_cell_ = findMaster(
@@ -412,30 +438,28 @@ bool RamGen::isAndGate(sta::LibertyPort* port, int num_inputs) {
   if (!function) {
     return false;
   }
+  
   int inputs_count = 0;
-  // Recursively count the number of input ports in the function
-  std::function<int(sta::FuncExpr*)> countInputs = [&](sta::FuncExpr* expr) -> int {
-    if (expr->op() == sta::FuncExpr::op_port) {
-      return 1;
-    } else if (expr->op() == sta::FuncExpr::op_and) {
-      return countInputs(expr->left()) + countInputs(expr->right());
-    } else {
-      return 0;
-    }
-  };
-  inputs_count = countInputs(function);
-  return (inputs_count == num_inputs);
+  bool is_and_gate = isAndGateFunction(function, inputs_count);
+
+  return is_and_gate && inputs_count == num_inputs;
+}
+
+bool RamGen::isAndGateFunction(sta::FuncExpr* expr, int& inputs_count) {
+  if (expr->op() == sta::FuncExpr::op_port) {
+    inputs_count += 1;
+    return true;
+  } else if (expr->op() == sta::FuncExpr::op_and) {
+    bool left_is_and = isAndGateFunction(expr->left(), inputs_count);
+    bool right_is_and = isAndGateFunction(expr->right(), inputs_count);
+    return left_is_and && right_is_and;
+  } else {
+    return false;
+  }
 }
 
 odb::dbMaster* RamGen::getAndGate(int num_inputs) {
-  if (num_inputs == 2) {
-    return and2_cell_;
-  } else if (and_cells_.find(num_inputs) != and_cells_.end()) {
-    return and_cells_[num_inputs];
-  } else {
-    // For more inputs, chain smaller gates or handle error
-    return nullptr;
-  }
+  return and2_cell_;
 }
 
 odb::dbMaster* RamGen::findMaster(
