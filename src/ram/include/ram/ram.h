@@ -10,9 +10,11 @@
 #include "sta/Liberty.hh"   // For sta::LibertyPort and sta::LibertyCell
 #include "sta/PortDirection.hh"  // For sta::PortDirection
 #include "utl/Logger.h"
+#include "../../src/layout.h" // Include the layout header
 
 namespace odb {
 class dbMaster;
+class dbNet;  // Forward declaration of dbNet
 }
 
 namespace sta {
@@ -25,9 +27,6 @@ class PortDirection;
 namespace ram {
 
 using utl::Logger;
-
-class Element;
-class Layout;
 
 class RamGen
 {
@@ -71,6 +70,14 @@ class RamGen
       const std::vector<std::array<odb::dbNet*, 8>>& data_output,
       bool mask);
 
+  // Generic buffer creation
+    std::unique_ptr<Element> make_buffer(
+      const std::string& prefix,
+      const std::vector<odb::dbNet*>& input_nets,
+      const std::vector<odb::dbNet*>& output_nets,
+      odb::Orientation2D orientation); // Add orientation
+
+
   // Decoder builder for 2-to-4 and 3-to-8 decoders
   std::vector<odb::dbNet*> buildDecoder(Layout& layout, const std::vector<odb::dbNet*>& address_nets, int word_count);
 
@@ -100,4 +107,3 @@ class RamGen
 };
 
 }  // namespace ram
-

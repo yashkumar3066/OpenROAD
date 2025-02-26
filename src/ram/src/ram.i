@@ -139,4 +139,3 @@ generate_ram_netlist_cmd(int bytes_per_word,
 }
 
 %} // inline
-

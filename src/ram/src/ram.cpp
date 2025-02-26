@@ -166,98 +166,183 @@ std::unique_ptr<Element> RamGen::make_byte(
   return std::make_unique<Element>(std::move(layout));
 }
 
+// Generic buffer creation (NO ROTATION)
+std::unique_ptr<Element> RamGen::make_buffer(
+    const std::string& prefix,
+    const std::vector<odb::dbNet*>& input_nets,
+    const std::vector<odb::dbNet*>& output_nets,
+    odb::Orientation2D orientation) { // Add orientation argument
+
+  auto layout = std::make_unique<Layout>(orientation); // Use the provided orientation
+
+  if (input_nets.size() != output_nets.size()) {
+      logger_->error(RAM, 100, "Input and output net count mismatch in make_buffer");
+      return nullptr; // Or throw an exception.
+  }
+
+  for (size_t bit = 0; bit < input_nets.size(); ++bit) {
+    auto mid_net = makeNet(prefix, fmt::format("buffer_mid_{}", bit));
+
+    // First inverter
+    makeInst(layout.get(),
+             prefix,
+             fmt::format("inv1_{}", bit),
+             inv_cell_,
+             {{"A", input_nets[bit]}, {"Y", mid_net}});
+    // NO ROTATION
+
+    // Second inverter
+    makeInst(layout.get(),
+             prefix,
+             fmt::format("inv2_{}", bit),
+             inv_cell_,
+             {{"A", mid_net}, {"Y", output_nets[bit]}});
+    // NO ROTATION
+  }
+
+  return std::make_unique<Element>(std::move(layout));
+}
+
+
 void RamGen::generate(const int bytes_per_word,
-                      const int word_count,
-                      const int read_ports,
-                      dbMaster* storage_cell,
-                      dbMaster* tristate_cell,
-                      dbMaster* inv_cell,
-                      bool mask) {
-  const int bits_per_word = bytes_per_word * 8;
-  const std::string ram_name = fmt::format("RAM{}x{}", word_count, bits_per_word);
+                    const int word_count,
+                    const int read_ports,
+                    dbMaster* storage_cell,
+                    dbMaster* tristate_cell,
+                    dbMaster* inv_cell,
+                    bool mask) {
+    const int bits_per_word = bytes_per_word * 8;
+    const std::string ram_name = fmt::format("RAM{}x{}", word_count, bits_per_word);
+    logger_->info(RAM, 6, "Generating {}", ram_name);
 
-  logger_->info(RAM, 6, "Generating {}", ram_name);
-
-  storage_cell_ = storage_cell;
-  tristate_cell_ = tristate_cell;
-  inv_cell_ = inv_cell;
-  and2_cell_ = nullptr;
-  clock_gate_cell_ = nullptr;
-  findMasters();
-
-  auto chip = db_->getChip();
-  if (!chip) {
-    chip = odb::dbChip::create(db_);
-  }
-
-  block_ = chip->getBlock();
-  if (!block_) {
-    block_ = odb::dbBlock::create(chip, ram_name.c_str());
-  }
-
-  // Horizontal layout to hold both the decoder and RAM block
-  auto main_layout = std::make_unique<Layout>(odb::horizontal);
-
-  // Create the vertical layout for the decoder logic
-  auto decoder_layout = std::make_unique<Layout>(odb::vertical);
-
-  auto clock = makeBTerm("clock");
-
-  vector<dbNet*> write_enable(bytes_per_word, nullptr);
-  for (int byte = 0; byte < bytes_per_word; ++byte) {
-    auto in_name = fmt::format("write_enable[{}]", byte);
-    write_enable[byte] = makeBTerm(in_name);
-  }
-
-  // Calculate address bits
-  int address_bits = static_cast<int>(std::ceil(std::log2(word_count)));
-  std::vector<dbNet*> address_nets(address_bits);
-  for (int i = 0; i < address_bits; ++i) {
-    auto addr_name = fmt::format("addr[{}]", i);
-    address_nets[i] = makeBTerm(addr_name);
-  }
-
-  // Build decoder outputs
-  std::vector<dbNet*> decoder_outputs = buildDecoder(*decoder_layout, address_nets, word_count);
-
-  // Add the vertical decoder layout to the main horizontal layout
-  main_layout->addElement(std::make_unique<Element>(std::move(decoder_layout)));
-
-  // Now create the RAM blocks and attach them horizontally to the right of the decoder
-  for (int col = 0; col < bytes_per_word; ++col) {
-    array<dbNet*, 8> Di0;
-    for (int bit = 0; bit < 8; ++bit) {
-      Di0[bit] = makeBTerm(fmt::format("Di0[{}]", bit + col * 8));
+    storage_cell_ = storage_cell;
+    tristate_cell_ = tristate_cell;
+    inv_cell_ = inv_cell;
+    and2_cell_ = nullptr;
+    clock_gate_cell_ = nullptr;
+    findMasters();
+    auto chip = db_->getChip();
+    if (!chip) {
+        chip = odb::dbChip::create(db_);
     }
 
-    vector<array<dbNet*, 8>> Do;
+    block_ = chip->getBlock();
+    if (!block_) {
+        block_ = odb::dbBlock::create(chip, ram_name.c_str());
+    }
+
+    // --- Layout Structure ---
+    auto top_layout = std::make_unique<Layout>(odb::vertical);      // Top-level: Vertical
+    auto core_layout = std::make_unique<Layout>(odb::horizontal); // Decoder + RAM + Addr Buffer: Horizontal
+    auto decoder_layout = std::make_unique<Layout>(odb::vertical); // Decoder remains vertical
+
+
+    // --- Create Ports (BTerms) ---
+    auto clock = makeBTerm("clock");
+
+    vector<dbNet*> write_enable(bytes_per_word, nullptr);
+    for (int byte = 0; byte < bytes_per_word; ++byte) {
+        write_enable[byte] = makeBTerm(fmt::format("write_enable[{}]", byte));
+    }
+
+    // --- Address Buffer ---
+    int address_bits = static_cast<int>(std::ceil(std::log2(word_count)));
+    std::vector<dbNet*> address_inputs_external(address_bits);
+    for (int i = 0; i < address_bits; ++i) {
+        address_inputs_external[i] = makeBTerm(fmt::format("A[{}]", i)); // External address inputs
+    }
+
+    std::vector<dbNet*> address_inputs_internal(address_bits);
+    for (int i = 0; i < address_bits; ++i) {
+        address_inputs_internal[i] = makeNet("ram", fmt::format("addr[{}]", i)); // Internal address nets
+    }
+    // Vertical layout for inverters *within* the address buffer
+    auto address_buffer_layout = make_buffer("address_buffer", address_inputs_external, address_inputs_internal, odb::vertical);
+    core_layout->addElement(std::move(address_buffer_layout)); // Add address buffer to core_layout
+
+    // --- Decoder ---
+    //Address buffer output is given as input to decoder.
+    std::vector<dbNet*> decoder_outputs = buildDecoder(*decoder_layout, address_inputs_internal, word_count);
+    core_layout->addElement(std::make_unique<Element>(std::move(decoder_layout))); // Add decoder to core_layout
+
+
+    // --- Input Buffer (Data) ---
+    std::vector<dbNet*> data_input_external(bits_per_word);
+    for (int bit = 0; bit < bits_per_word; ++bit) {
+        data_input_external[bit] = makeBTerm(fmt::format("Din[{}]", bit));
+    }
+
+    std::vector<dbNet*> data_input_internal(bits_per_word);
+    for (int bit = 0; bit < bits_per_word; ++bit) {
+        data_input_internal[bit] = makeNet("ram", fmt::format("Di0[{}]", bit));
+    }
+    auto input_buffer_layout = make_buffer("input_buffer", data_input_external, data_input_internal, odb::horizontal);
+    top_layout->addElement(std::move(input_buffer_layout)); // Input buffer (Data) at the top level
+
+    // --- Declare Do_internal OUTSIDE the column loop ---
+    vector<array<dbNet*, 8>> Do_internal(read_ports);
     for (int read_port = 0; read_port < read_ports; ++read_port) {
-      array<dbNet*, 8> d;
-      for (int bit = 0; bit < 8; ++bit) {
-        auto out_name = fmt::format("Do{}[{}]", read_port, bit + col * 8);
-        d[bit] = makeBTerm(out_name);
-      }
-      Do.push_back(d);
+        Do_internal[read_port].fill(nullptr); // Initialize the array
     }
 
-    auto column = std::make_unique<Layout>(odb::vertical);
-    for (int row = 0; row < word_count; ++row) {
-      auto name = fmt::format("storage_{}_{}", row, col);
-      column->addElement(
-          make_byte(name,
-                    read_ports,
-                    clock,
-                    write_enable[col],
-                    {decoder_outputs[row]},
-                    Di0,
-                    Do,
-                    mask));
-    }
-    main_layout->addElement(std::make_unique<Element>(std::move(column)));
-  }
+    // --- RAM Columns ---
+    for (int col = 0; col < bytes_per_word; ++col) {
+        array<dbNet*, 8> Di0;
+        for (int bit = 0; bit < 8; ++bit) {
+        Di0[bit] = data_input_internal[bit + col * 8]; // Connect to input buffer
+        }
 
-  // Position the main layout with both the decoder and RAM blocks
-  main_layout->position(odb::Point(0, 0));
+        // Create INTERNAL Do nets
+        for (int read_port = 0; read_port < read_ports; ++read_port) {
+        for (int bit = 0; bit < 8; ++bit) {
+            Do_internal[read_port][bit]
+                = makeNet("ram", fmt::format("Do_internal_{}_{}", read_port, bit + col * 8));
+        }
+        }
+
+        auto column_layout = std::make_unique<Layout>(odb::vertical);
+        for (int row = 0; row < word_count; ++row) {
+        column_layout->addElement(
+            make_byte(fmt::format("storage_{}_{}", row, col),
+                        read_ports,
+                        clock,
+                        write_enable[col],
+                        {decoder_outputs[row]},
+                        Di0,
+                        Do_internal,
+                        mask));
+        }
+        core_layout->addElement(std::make_unique<Element>(std::move(column_layout))); // Add RAM column
+    }
+
+    // --- Output Buffer ---
+    // Create EXTERNAL Dout BTerms
+    std::vector<dbNet*> data_output_external(bits_per_word * read_ports);
+    int dout_index = 0;
+    for(int read_port = 0; read_port < read_ports; ++read_port) {
+        for(int bit = 0; bit < bits_per_word; ++bit)
+        {
+            data_output_external[dout_index] = makeBTerm(fmt::format("Dout[{}]", dout_index)); //fixed
+            dout_index++; // Corrected increment
+        }
+    }
+
+    // Flatten Do_internal for make_buffer - Now Do_internal is accessible!
+    std::vector<dbNet*> data_output_internal_flat;
+    for (int read_port = 0; read_port < read_ports; ++read_port)
+    {
+        for (int bit = 0; bit<bits_per_word; ++bit)
+        {
+            data_output_internal_flat.push_back(Do_internal[read_port][bit]);
+        }
+    }
+    auto output_buffer_layout = make_buffer("output_buffer", data_output_internal_flat, data_output_external, odb::horizontal);
+
+    top_layout->addElement(std::make_unique<Element>(std::move(core_layout)));
+    top_layout->addElement(std::move(output_buffer_layout));
+
+    // --- Final Layout Positioning ---
+    top_layout->position(odb::Point(0, 0));
 }
 
 std::vector<dbNet*> RamGen::buildDecoder(Layout& parent_layout, const std::vector<dbNet*>& address_nets, int word_count)
@@ -438,7 +523,7 @@ bool RamGen::isAndGate(sta::LibertyPort* port, int num_inputs) {
   if (!function) {
     return false;
   }
-  
+
   int inputs_count = 0;
   bool is_and_gate = isAndGateFunction(function, inputs_count);
 
@@ -515,4 +600,3 @@ odb::dbMaster* RamGen::findMaster(
 }
 
 }  // namespace ram
-
