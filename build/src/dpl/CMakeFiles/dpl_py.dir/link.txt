@@ -1,0 +1,2 @@
+/usr/bin/ar qc _dpl_py.a "CMakeFiles/dpl_py.dir/CMakeFiles/dpl_py.dir/Opendp-pyPYTHON_wrap.cxx.o" "CMakeFiles/dpl_py.dir/dpl_py-pythonInitVar.cc.o"
+/usr/bin/ranlib _dpl_py.a

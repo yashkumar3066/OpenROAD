@@ -1,0 +1,5 @@
+STT 0001 SteinerTreeBuilder.tcl:52 The alpha value must be between 0.0 and 1.0. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/stt/src/SteinerTreeBuilder.tcl#L52
+STT 0004 SteinerTreeBuilder.cpp:248 Net {} is connected to unplaced instance {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/stt/src/SteinerTreeBuilder.cpp#L248
+STT 0005 SteinerTreeBuilder.cpp:267 Net {} is connected to unplaced pin {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/stt/src/SteinerTreeBuilder.cpp#L267
+STT 0006 SteinerTreeBuilder.tcl:91 Clock nets for $cmd command were not found ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/stt/src/SteinerTreeBuilder.tcl#L91
+STT 0007 SteinerTreeBuilder.cpp:304 Invalid driver index {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/stt/src/SteinerTreeBuilder.cpp#L304

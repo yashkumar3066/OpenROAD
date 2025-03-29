@@ -1,0 +1,89 @@
+ORD 0201 Resizer.tcl:48            Use -layer or -via but not both. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L48
+ORD 0202 Resizer.tcl:57            layer $layer_name not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L57
+ORD 0203 Resizer.tcl:61            $layer_name is not a routing layer. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L61
+ORD 0204 Resizer.tcl:65            missing -capacitance or -resistance argument. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L65
+ORD 0205 Resizer.tcl:98            via $layer_name not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L98
+ORD 0206 Resizer.tcl:102           -capacitance not supported for vias. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L102
+ORD 0208 Resizer.tcl:120           no -resistance specified for via. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L120
+ORD 0209 Resizer.tcl:123           missing -layer or -via argument. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L123
+RSZ 0001 Resizer.tcl:145           Use -layer or -resistance/-capacitance but not both. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L145
+RSZ 0002 Resizer.tcl:150           layer $layer_name not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L150
+RSZ 0003 Resizer.tcl:231           missing -placement or -global_routing flag. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L231
+RSZ 0004 Resizer.tcl:591           -max_utilization must be between 0 and 100%. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L591
+RSZ 0005 Resizer.tcl:228           Run global_route before estimating parasitics for global routing. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L228
+RSZ 0010 Resizer.tcl:192           $signal_clk wire resistance is 0. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L192
+RSZ 0011 Resizer.tcl:195           $signal_clk wire capacitance is 0. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L195
+RSZ 0020 Resizer.tcl:507           found $floating_net_count floating nets. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L507
+RSZ 0021 Resizer.tcl:558           no estimated parasitics. Using wire load models. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L558
+RSZ 0022 Resizer.cc:471            no buffers found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L471
+RSZ 0023 Resizer.cc:2914           Output pin found when none was expected. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L2914
+RSZ 0025 RepairSetup.cc:294        max utilization reached. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairSetup.cc#L294
+RSZ 0026 Resizer.cc:278            Removed {} buffers. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L278
+RSZ 0027 Resizer.cc:522            Inserted {} input buffers. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L522
+RSZ 0028 Resizer.cc:652            Inserted {} output buffers. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L652
+RSZ 0030 RepairSetup.cc:318        Inserted {} buffers. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairSetup.cc#L318
+RSZ 0031 RepairSetup.cc:321        Resized {} instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairSetup.cc#L321
+RSZ 0032 RepairHold.cc:305         Inserted {} hold buffers. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairHold.cc#L305
+RSZ 0033 RepairHold.cc:316         No hold violations found. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairHold.cc#L316
+RSZ 0034 RepairDesign.cc:125       Found {} slew violations. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L125
+RSZ 0035 RepairDesign.cc:128       Found {} fanout violations. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L128
+RSZ 0036 RepairDesign.cc:131       Found {} capacitance violations. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L131
+RSZ 0037 RepairDesign.cc:134       Found {} long wires. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L134
+RSZ 0038 RepairDesign.cc:137       Inserted {} buffers in {} nets. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L137
+RSZ 0039 RepairDesign.cc:142       Resized {} instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L142
+RSZ 0040 RepairSetup.cc:273        Inserted {} buffers. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairSetup.cc#L273
+RSZ 0041 RepairSetup.cc:281        Resized {} instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairSetup.cc#L281
+RSZ 0042 Resizer.cc:1870           Inserted {} tie {} instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L1870
+RSZ 0043 RepairSetup.cc:284        Swapped pins on {} instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairSetup.cc#L284
+RSZ 0044 RepairSetup.cc:324        Swapped pins on {} instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairSetup.cc#L324
+RSZ 0045 RepairSetup.cc:276        Inserted {} buffers, {} to split loads. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairSetup.cc#L276
+RSZ 0046 RepairHold.cc:263         Found {} endpoints with hold violations. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairHold.cc#L263
+RSZ 0047 RepairDesign.cc:271       Found {} long wires. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L271
+RSZ 0048 RepairDesign.cc:274       Inserted {} buffers in {} nets. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L274
+RSZ 0049 RepairSetup.cc:287        Cloned {} instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairSetup.cc#L287
+RSZ 0050 RepairHold.cc:312         Max utilization reached. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairHold.cc#L312
+RSZ 0051 RepairDesign.cc:321       Found {} slew violations. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L321
+RSZ 0052 RepairDesign.cc:324       Found {} fanout violations. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L324
+RSZ 0053 RepairDesign.cc:327       Found {} capacitance violations. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L327
+RSZ 0054 RepairDesign.cc:330       Found {} long wires. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L330
+RSZ 0055 RepairDesign.cc:333       Inserted {} buffers in {} nets. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L333
+RSZ 0056 RepairDesign.cc:339       Resized {} instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L339
+RSZ 0057 RepairDesign.cc:342       Resized {} instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L342
+RSZ 0058 Resizer.tcl:632           Using max wire length ${max_wire_length_fmt}um. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L632
+RSZ 0060 RepairHold.cc:309         Max buffer count reached. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairHold.cc#L309
+RSZ 0062 RepairSetup.cc:291        Unable to repair all setup violations. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairSetup.cc#L291
+RSZ 0064 RepairHold.cc:301         Unable to repair all hold checks within margin. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairHold.cc#L301
+RSZ 0065 Resizer.tcl:627           max wire length less than $wire_length_fmt increases wire delays. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L627
+RSZ 0066 RepairHold.cc:299         Unable to repair all hold violations. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairHold.cc#L299
+RSZ 0067 Resizer.tcl:569           $key must be  between 0 and 100 percent. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L569
+RSZ 0068 Resizer.cc:1602           missing target load cap. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L1602
+RSZ 0069 SteinerTree.cc:91         skipping net {} with {} pins. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/SteinerTree.cc#L91
+RSZ 0070 Resizer.cc:2369           no LEF cell for {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L2369
+RSZ 0071 Rebuffer.cc:297           unhandled BufferedNet type CRITICAL https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Rebuffer.cc#L297
+RSZ 0072 RepairDesign.cc:745       unhandled BufferedNet type CRITICAL https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L745
+RSZ 0073 BufferedNet.cc:670        driver pin {} not found in global routes WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/BufferedNet.cc#L670
+RSZ 0074 BufferedNet.cc:674        driver pin {} not found in global route grid points WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/BufferedNet.cc#L674
+RSZ 0075 Rebuffer.cc:132           makeBufferedNet failed for driver {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Rebuffer.cc#L132
+RSZ 0076 Resizer.tcl:420           -slack_margin is deprecated. Use -setup_margin/-hold_margin WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L420
+RSZ 0077 Resizer.cc:3127           some buffers were moved inside the core. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L3127
+RSZ 0078 BufferedNet.cc:83         incorrect BufferedNet type {} CRITICAL https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/BufferedNet.cc#L83
+RSZ 0079 BufferedNet.cc:118        incorrect BufferedNet type {} CRITICAL https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/BufferedNet.cc#L118
+RSZ 0080 BufferedNet.cc:146        incorrect BufferedNet type {} CRITICAL https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/BufferedNet.cc#L146
+RSZ 0081 BufferedNet.cc:176        incorrect BufferedNet type {} CRITICAL https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/BufferedNet.cc#L176
+RSZ 0082 BufferedNet.cc:346        wireRC called for non-wire CRITICAL https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/BufferedNet.cc#L346
+RSZ 0083 RepairDesign.cc:1146      pin outside regions CRITICAL https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairDesign.cc#L1146
+RSZ 0084 Resizer.cc:670            Output {} can't be buffered due to dont-touch driver {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L670
+RSZ 0085 Resizer.cc:573            Input {} can't be buffered due to dont-touch fanout {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L573
+RSZ 0086 Resizer.cc:1477           metersToDbu({}) cannot convert negative distances ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L1477
+RSZ 0088 Resizer.cc:2326           Corner: {} has no wire signal resistance value. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L2326
+RSZ 0089 Resizer.cc:2341           Could not find a resistance value for any corner. Cannot  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L2341
+RSZ 0090 PreChecks.cc:81           Max transition time from SDC is {}{}s. Best achievable transition time is {}{}s with a load of {}{}F ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/PreChecks.cc#L81
+RSZ 0092 SteinerTree.cc:394        Steiner tree creation error. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/SteinerTree.cc#L394
+RSZ 0093 SteinerTree.cc:323        Invalid Steiner point {} requested. 0 <= Valid values <  {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/SteinerTree.cc#L323
+RSZ 0094 RepairSetup.cc:142        Found {} endpoints with setup violations. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RepairSetup.cc#L142
+RSZ 0095 Resizer.tcl:515           found $floating_pin_count floating pins. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.tcl#L515
+RSZ 0096 Resizer.cc:973            Cell {} is missing in {} and will be set dont-use WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/Resizer.cc#L973
+RSZ 0125 RecoverPower.cc:201       max utilization reached. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RecoverPower.cc#L201
+RSZ 0141 RecoverPower.cc:198       Resized {} instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RecoverPower.cc#L198
+RSZ 0142 RecoverPower.cc:176       {} successive tries yielded negative slack. Ending power recovery INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RecoverPower.cc#L176
+RSZ 3111 RecoverPower.cc:222       Resized {} instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rsz/src/RecoverPower.cc#L222

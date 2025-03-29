@@ -1,0 +1,29 @@
+MPL 0001 mpl.tcl:83                No block found for Macro Placement. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/mpl.tcl#L83
+MPL 0002 hier_rtlmp.cpp:934        Floorplan has not been initialized? Pin location error for {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L934
+MPL 0003 hier_rtlmp.cpp:2803       There are no valid tilings for mixed cluster: {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L2803
+MPL 0004 hier_rtlmp.cpp:3023       No valid tilings for hard macro cluster: {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L3023
+MPL 0005 hier_rtlmp.cpp:3837       Failed on cluster {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L3837
+MPL 0006 hier_rtlmp.cpp:4089       Failed on cluster {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L4089
+MPL 0007 hier_rtlmp.cpp:5242       Not enough space in cluster: {} for  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L5242
+MPL 0008 hier_rtlmp.cpp:5261       Not enough space in cluster: {} for  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L5261
+MPL 0009 hier_rtlmp.cpp:5408       Bus planning has failed! ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L5408
+MPL 0010 hier_rtlmp.cpp:5610       Macro placement failed for macro cluster: {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L5610
+MPL 0011 hier_rtlmp.cpp:6413       Cannot open file {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L6413
+MPL 0012 mpl.tcl:280               -location is not a list of 2 values. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/mpl.tcl#L280
+MPL 0015 graphics.cpp:335          Unexpected orientation ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/graphics.cpp#L335
+MPL 0016 hier_rtlmp.cpp:469        The instance area with halos {} exceeds the core area {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L469
+MPL 0017 hier_rtlmp.cpp:464        No unfixed macros. Skipping placement. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L464
+MPL 0018 mpl.tcl:290               No orientation specified for [$macro getName], defaulting to R0. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/mpl.tcl#L290
+MPL 0019 mpl.tcl:268               -macro_name is required. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/mpl.tcl#L268
+MPL 0020 mpl.tcl:303               Couldn't find a macro named $macro_name. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/mpl.tcl#L303
+MPL 0021 mpl.tcl:305               [$inst getName] is not a macro. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/mpl.tcl#L305
+MPL 0022 mpl.tcl:276               -location is required. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/mpl.tcl#L276
+MPL 0025 hier_rtlmp.cpp:532        Design has no standard cells! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L532
+MPL 0026 hier_rtlmp.cpp:969        Design has no IO pins! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L969
+MPL 0027 hier_rtlmp.cpp:619        Design has only macros! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L619
+MPL 0034 rtl_mp.cpp:143            Specified location results in illegal placement. Cannot  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/rtl_mp.cpp#L143
+MPL 0035 rtl_mp.cpp:186            Macro {} placed. Bounding box ({:.3f}um, {:.3f}um),  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/rtl_mp.cpp#L186
+MPL 0036 rtl_mp.cpp:176            Orientation {} specified for macro {} is a right angle rotation. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/rtl_mp.cpp#L176
+MPL 0038 object.cpp:626            Cannot set pin access for {} boundary. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/object.cpp#L626
+MPL 0039 hier_rtlmp.cpp:6405       The flag -write_macro_placement is deprecated. Use the .tcl  WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L6405
+MPL 0040 hier_rtlmp.cpp:5110       Failed on cluster {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/mpl2/src/hier_rtlmp.cpp#L5110

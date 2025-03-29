@@ -1,0 +1,2 @@
+/usr/bin/ar qc upf.a CMakeFiles/upf.dir/CMakeFiles/upf.dir/upfTCL_wrap.cxx.o "CMakeFiles/upf.dir/upf-tclInitVar.cc.o"
+/usr/bin/ranlib upf.a

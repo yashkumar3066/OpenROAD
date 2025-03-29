@@ -35,7 +35,7 @@ class RamGen
 
   void init(odb::dbDatabase* db, sta::dbNetwork* network, Logger* logger);
 
-  void generate(const int bytes_per_word,
+  void generate_ram_netlist(const int bytes_per_word,
                 const int word_count,
                 const int read_ports,
                 odb::dbMaster* storage_cell,

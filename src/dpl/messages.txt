@@ -1,0 +1,42 @@
+DPL 0001 FillerPlacement.cpp:100   Placed {} filler instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/FillerPlacement.cpp#L100
+DPL 0002 FillerPlacement.cpp:137   could not fill gap of size {} at {},{} dbu between {} and {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/FillerPlacement.cpp#L137
+DPL 0012 dbToOpendp.cpp:141        no rows found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/dbToOpendp.cpp#L141
+DPL 0013 Grid.cpp:873              Cannot paint grid because it is already occupied. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Grid.cpp#L873
+DPL 0014 Place.cpp:904             Cannot find grid info for row height {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Place.cpp#L904
+DPL 0015 Place.cpp:314             instance {} does not fit inside the ROW core area. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Place.cpp#L314
+DPL 0016 Place.cpp:432             cannot place instance {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Place.cpp#L432
+DPL 0017 Place.cpp:486             cannot place instance {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Place.cpp#L486
+DPL 0018 Place.cpp:626             Cannot find grid info for row height {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Place.cpp#L626
+DPL 0019 Place.cpp:1121            Cannot find grid info for row height {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Place.cpp#L1121
+DPL 0020 OptMirror.cpp:112         Mirrored {} instances INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/OptMirror.cpp#L112
+DPL 0021 OptMirror.cpp:114         HPWL before          {:8.1f} u INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/OptMirror.cpp#L114
+DPL 0022 OptMirror.cpp:116         HPWL after           {:8.1f} u INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/OptMirror.cpp#L116
+DPL 0023 OptMirror.cpp:121         HPWL delta           {:8.1f} % INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/OptMirror.cpp#L121
+DPL 0026 Place.cpp:1388            legalPt called on fixed cell. CRITICAL https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Place.cpp#L1388
+DPL 0027 Opendp.tcl:80             no rows defined in design. Use initialize_floorplan to add rows. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.tcl#L80
+DPL 0028 Opendp.tcl:215            $name did not match any masters. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.tcl#L215
+DPL 0029 Opendp.tcl:232            cannot find instance $inst_name ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.tcl#L232
+DPL 0030 Opendp.tcl:248            cannot find instance $inst_name ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.tcl#L248
+DPL 0031 Opendp.tcl:56             -max_displacement disp|{disp_x disp_y} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.tcl#L56
+DPL 0032 Opendp.tcl:190            Debug instance $instance_name not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.tcl#L190
+DPL 0033 CheckPlacement.cpp:144    detailed placement checks failed. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/CheckPlacement.cpp#L144
+DPL 0034 Opendp.cpp:176            Detailed placement failed on the following {} instances: INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.cpp#L176
+DPL 0035 Opendp.cpp:181             {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.cpp#L181
+DPL 0036 Opendp.cpp:188            Detailed placement failed. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.cpp#L188
+DPL 0037 Opendp.cpp:147            Use remove_fillers before detailed placement. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.cpp#L147
+DPL 0038 Opendp.cpp:163            No 1-site fill cells detected.  To remove 1-site gaps use  WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.cpp#L163
+DPL 0039 Opendp.tcl:219            \"$arg\" did not match any masters.
+This could be due to a change from using regex to glob to search for cell masters. https://github.com/The-OpenROAD-Project/OpenROAD/pull/3210 ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.tcl#L219
+DPL 0040 CheckPlacement.cpp:225    Failed to open file {} for writing. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/CheckPlacement.cpp#L225
+DPL 0041 Grid.cpp:920              Cannot paint grid with cell {} because another  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Grid.cpp#L920
+DPL 0042 Grid.cpp:696              No cells found in group {}.  WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Grid.cpp#L696
+DPL 0043 Opendp.cpp:582            No grid layers mapped. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.cpp#L582
+DPL 0044 Opendp.cpp:588            Cell {} with height {} is taller than any row. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.cpp#L588
+DPL 0045 CheckPlacement.cpp:287    Failed to write JSON report. Exception: {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/CheckPlacement.cpp#L287
+DPL 0046 Opendp.cpp:601            Site {} is not mapped to a grid. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.cpp#L601
+DPL 0048 CheckPlacement.cpp:166    Could not find overlapping cell for cell {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/CheckPlacement.cpp#L166
+DPL 0049 dbToOpendp.cpp:144        Mixing hybrid and non-hybrid rows is unsupported. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/dbToOpendp.cpp#L144
+DPL 0128 Grid.cpp:185              Cannot find a non-hybrid grid to use for placement. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Grid.cpp#L185
+DPL 1599 Place.cpp:1031            Pixel site is null ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Place.cpp#L1031
+DPL 4219 Opendp.cpp:618            Cell {} has no site. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.cpp#L618
+DPL 5211 Opendp.cpp:610            getGridMapKey cell is null ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/dpl/src/Opendp.cpp#L610

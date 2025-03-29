@@ -1,0 +1,28 @@
+IFP 0001 InitFloorplan.cc:437      Added {} rows of {} site {}. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L437
+IFP 0010 InitFloorplan.tcl:165     layer $layer_name not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.tcl#L165
+IFP 0011 InitFloorplan.tcl:56      use -site to add placement rows. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.tcl#L56
+IFP 0013 InitFloorplan.tcl:84      -core_space is either a list of 4 margins or one value for all margins. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.tcl#L84
+IFP 0015 InitFloorplan.tcl:108     -die_area is a list of 4 coordinates. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.tcl#L108
+IFP 0016 InitFloorplan.tcl:120     -core_area is a list of 4 coordinates. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.tcl#L120
+IFP 0017 InitFloorplan.tcl:137     no -core_area specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.tcl#L137
+IFP 0018 InitFloorplan.i:149       Unable to find site: {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.i#L149
+IFP 0019 InitFloorplan.tcl:140     no -utilization or -die_area specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.tcl#L140
+IFP 0021 InitFloorplan.cc:711      Track pattern for {} will be skipped due to x_offset > die width. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L711
+IFP 0022 InitFloorplan.cc:719      Track pattern for {} will be skipped due to y_offset > die height. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L719
+IFP 0025 InitFloorplan.tcl:168     layer $layer_name is not a routing layer. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.tcl#L168
+IFP 0026 InitFloorplan.cc:314      left core row: {} has less than 10 sites WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L314
+IFP 0027 InitFloorplan.cc:345      right core row: {} has less than 10 sites WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L345
+IFP 0028 InitFloorplan.cc:208      Core area lower left ({:.3f}, {:.3f}) snapped to  WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L208
+IFP 0029 InitFloorplan.cc:632      Unable to determine tiecell ({}) function. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L632
+IFP 0030 InitFloorplan.cc:657      Inserted {} tiecells using {}/{}. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L657
+IFP 0031 InitFloorplan.tcl:234     Unable to find master: $tie_cell ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.tcl#L234
+IFP 0032 InitFloorplan.tcl:239     Unable to find master pin: $args ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.tcl#L239
+IFP 0038 InitFloorplan.i:66        No design is loaded. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.i#L66
+IFP 0039 InitFloorplan.cc:616      Liberty cell or port {}/{} not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L616
+IFP 0040 InitFloorplan.cc:446      Site {} height {} of  is not a multiple of site {} height {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L446
+IFP 0043 InitFloorplan.cc:397      No site found for instance {} in block {}. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L397
+IFP 0044 InitFloorplan.cc:776      Non horizontal layer uses property LEF58_PITCH. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L776
+IFP 0045 InitFloorplan.cc:789      No routing Row found in layer {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L789
+IFP 0048 InitFloorplan.cc:508      Site {} is incompatible with site {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L508
+IFP 0049 InitFloorplan.cc:545      Added {} rows from site {} row pattern. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L545
+IFP 0050 InitFloorplan.cc:571      Added {} rows of site {}. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ifp/src/InitFloorplan.cc#L571

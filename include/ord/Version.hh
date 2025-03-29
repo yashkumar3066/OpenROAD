@@ -1,0 +1,5 @@
+#define OPENROAD_VERSION "v2.0-12549-g2d074ffb7"
+
+#define OPENROAD_GIT_DESCRIBE ""
+
+/* #undef BUILD_OPENPHYSYN */

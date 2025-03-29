@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgrt_lib.a CMakeFiles/grt_lib.dir/src/Grid.cpp.o CMakeFiles/grt_lib.dir/src/Net.cpp.o CMakeFiles/grt_lib.dir/src/Pin.cpp.o CMakeFiles/grt_lib.dir/src/MakeWireParasitics.cpp.o CMakeFiles/grt_lib.dir/src/RepairAntennas.cpp.o CMakeFiles/grt_lib.dir/src/GlobalRouter.cpp.o
+/usr/bin/ranlib libgrt_lib.a

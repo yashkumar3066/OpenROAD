@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdft_stitch_lib.a CMakeFiles/dft_stitch_lib.dir/ScanStitch.cpp.o
+/usr/bin/ranlib libdft_stitch_lib.a

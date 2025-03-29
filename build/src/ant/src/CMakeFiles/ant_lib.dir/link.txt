@@ -1,0 +1,2 @@
+/usr/bin/ar qc libant_lib.a CMakeFiles/ant_lib.dir/AntennaChecker.cc.o
+/usr/bin/ranlib libant_lib.a

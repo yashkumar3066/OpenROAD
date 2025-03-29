@@ -1,0 +1,2 @@
+/usr/bin/ar qc _gpl_py.a "CMakeFiles/gpl_py.dir/CMakeFiles/gpl_py.dir/replace-pyPYTHON_wrap.cxx.o" "CMakeFiles/gpl_py.dir/gpl_py-pythonInitVar.cc.o"
+/usr/bin/ranlib _gpl_py.a

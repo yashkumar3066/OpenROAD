@@ -1,0 +1,2 @@
+/usr/bin/ar qc libodb_swig_common.a CMakeFiles/odb_swig_common.dir/swig_common.cpp.o
+/usr/bin/ranlib libodb_swig_common.a

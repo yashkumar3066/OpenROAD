@@ -1,0 +1,24 @@
+RMP 0001 blif.cpp:105              Cannot open file {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L105
+RMP 0002 blif.cpp:360              Blif writer successfully dumped file with {} instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L360
+RMP 0003 blif.cpp:384              Cannot open file {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L384
+RMP 0004 blif.cpp:407              Cannot open file {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L407
+RMP 0005 blif.cpp:429              Blif parsed successfully, will destroy {} existing instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L429
+RMP 0006 blif.cpp:433              Found {} inputs, {} outputs, {} clocks, {} combinational  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L433
+RMP 0007 blif.cpp:458              Inserting {} new instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L458
+RMP 0008 blif.cpp:477              Const driver {} doesn't have any connected nets. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L477
+RMP 0009 blif.cpp:521              Master ({}) not found while stitching back instances. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L521
+RMP 0010 blif.cpp:574              Connection {} parsing failed for {} instance. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L574
+RMP 0012 rmp.tcl:96                Missing argument -liberty_file ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/rmp.tcl#L96
+RMP 0016 Restructure.cpp:620       cannot open file {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/Restructure.cpp#L620
+RMP 0020 Restructure.cpp:485       Cannot open file {} for writing. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/Restructure.cpp#L485
+RMP 0021 Restructure.cpp:292       All re-synthesis runs discarded, keeping original netlist. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/Restructure.cpp#L292
+RMP 0025 Restructure.cpp:642       ABC run failed, see log file {} for details. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/Restructure.cpp#L642
+RMP 0026 Restructure.cpp:225       Error executing ABC command {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/Restructure.cpp#L225
+RMP 0032 rmp.tcl:112               -tielo_port not specified WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/rmp.tcl#L112
+RMP 0033 rmp.tcl:128               -tiehi_port not specified WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/rmp.tcl#L128
+RMP 0034 blif.cpp:421              Blif parser failed. File doesn't follow blif spec. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L421
+RMP 0035 Restructure.cpp:453       Could not create instance {}. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/Restructure.cpp#L453
+RMP 0036 Restructure.cpp:594       Mode {} not recognized. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/Restructure.cpp#L594
+RMP 0037 Restructure.cpp:299       Fail to remove file {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/Restructure.cpp#L299
+RMP 0076 blif.cpp:541              Could not create new instance of type {} with name {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L541
+RMP 0146 blif.cpp:595              Could not connect instance of cell type {} to {} net  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rmp/src/blif.cpp#L595

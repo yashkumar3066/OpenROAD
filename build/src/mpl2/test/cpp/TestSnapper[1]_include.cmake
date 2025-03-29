@@ -1,0 +1,5 @@
+if(EXISTS "/home/captainnothing/OpenROAD/build/src/mpl2/test/cpp/TestSnapper[1]_tests.cmake")
+  include("/home/captainnothing/OpenROAD/build/src/mpl2/test/cpp/TestSnapper[1]_tests.cmake")
+else()
+  add_test(TestSnapper_NOT_BUILT TestSnapper_NOT_BUILT)
+endif()

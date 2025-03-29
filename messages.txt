@@ -1,0 +1,44 @@
+ORD 0001 OpenRoad.tcl:45           $filename does not exist. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L45
+ORD 0002 OpenRoad.tcl:48           $filename is not readable. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L48
+ORD 0003 OpenRoad.tcl:85           $filename does not exist. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L85
+ORD 0004 OpenRoad.tcl:88           $filename is not readable. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L88
+ORD 0005 OpenRoad.tcl:94           No technology has been read. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L94
+ORD 0006 OpenRoad.tcl:125          DEF versions 5.8, 5.7, 5.6, 5.5, 5.4, 5.3 supported. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L125
+ORD 0007 OpenRoad.tcl:191          $filename does not exist. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L191
+ORD 0008 OpenRoad.tcl:194          $filename is not readable. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L194
+ORD 0014 Metrics.tcl:64            both -setup and -hold specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/Metrics.tcl#L64
+ORD 0015 OpenRoad.i:426            Unknown tool name {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.i#L426
+ORD 0017 Metrics.tcl:81            both -setup and -hold specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/Metrics.tcl#L81
+ORD 0018 Metrics.tcl:98            both -setup and -hold specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/Metrics.tcl#L98
+ORD 0019 Metrics.tcl:48            both -setup and -hold specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/Metrics.tcl#L48
+ORD 0030 OpenRoad.cc:596           Using {} thread(s). INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.cc#L596
+ORD 0031 OpenRoad.cc:582           Unable to determine maximum number of threads.\n WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.cc#L582
+ORD 0032 OpenRoad.cc:613           Invalid thread number specification: {}. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.cc#L613
+ORD 0033 OpenRoad.tcl:97           -order_wires is deprecated. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L97
+ORD 0034 OpenRoad.cc:418           More than one lib exists, multiple files will be written. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.cc#L418
+ORD 0036 Design.cc:66              A block already exists in the db ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/Design.cc#L66
+ORD 0037 Design.cc:127             No block loaded. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/Design.cc#L127
+ORD 0038 Main.cc:280               -gui is not yet supported with -python WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/Main.cc#L280
+ORD 0039 Main.cc:284               .openroad ignored with -python WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/Main.cc#L284
+ORD 0042 OpenRoad.tcl:303          The -net option of the add_global_connection command is required. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L303
+ORD 0043 OpenRoad.tcl:311          The -pin_pattern option of the add_global_connection command is required. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L311
+ORD 0045 OpenRoad.tcl:341          Region \"$keys(-region)\" not defined ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L341
+ORD 0046 OpenRoad.tcl:333          -defer_connection has been deprecated. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L333
+ORD 0047 OpenRoad.cc:472           You can't load a new db file as the db is already populated ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.cc#L472
+ORD 0048 OpenRoad.cc:321           Loading an additional DEF. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.cc#L321
+ORD 0049 OpenRoad.i:476            No tech is loaded ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.i#L476
+ORD 0050 OpenRoad.i:487            No tech is loaded ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.i#L487
+ORD 0051 OpenRoad.cc:299           Technology {} not found ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.cc#L299
+ORD 0052 OpenRoad.i:335            Technology {} not found ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.i#L335
+ORD 0053 OpenRoad.cc:401           No block is loaded. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.cc#L401
+ORD 0054 OpenRoad.cc:484           odb file {} is invalid: {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.cc#L484
+ORD 0101 Design.cc:82              Only one of the options -incremental and ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/Design.cc#L82
+ORD 0102 Design.cc:88              No technology has been read. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/Design.cc#L88
+ORD 0104 Timing.cc:148             STA network is not linked. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/Timing.cc#L148
+ORD 0105 OpenRoad.cc:518           Can't open {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.cc#L518
+ORD 0560 OpenRoad.tcl:412          $cmd $arg_opt missing value. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L412
+ORD 1009 OpenRoad.tcl:212          -name is missing. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L212
+ORD 1010 OpenRoad.tcl:215          Either -net or -all_clocks need to be defined. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L215
+ORD 1011 OpenRoad.tcl:221          No NDR named ${ndrName} found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L221
+ORD 1012 OpenRoad.tcl:227          No net named ${netName} found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L227
+ORD 1013 OpenRoad.tcl:174          -masters is required. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/OpenRoad.tcl#L174

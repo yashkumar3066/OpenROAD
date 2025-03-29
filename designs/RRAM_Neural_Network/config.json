@@ -1,0 +1,7 @@
+{
+    "DESIGN_NAME": "RRAM_Neural_Network",
+    "VERILOG_FILES": "dir::src/*.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10.0,
+    "FP_PDN_MULTILAYER": true
+}

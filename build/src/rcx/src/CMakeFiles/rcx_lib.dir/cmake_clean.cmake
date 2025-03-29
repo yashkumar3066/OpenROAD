@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/rcx_lib.dir/ext.cpp.o"
+  "CMakeFiles/rcx_lib.dir/ext.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extBench.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extBench.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extBenchDB.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extBenchDB.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extCC.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extCC.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extCoords.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extCoords.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extDebugPrint.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extDebugPrint.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extFlow.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extFlow.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extRCmodel.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extRCmodel.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extSpef.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extSpef.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extSpefIn.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extSpefIn.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extmain.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extmain.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extmeasure.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extmeasure.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extmeasure_res.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extmeasure_res.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extprocess.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extprocess.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/extstats.cpp.o"
+  "CMakeFiles/rcx_lib.dir/extstats.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/name.cpp.o"
+  "CMakeFiles/rcx_lib.dir/name.cpp.o.d"
+  "CMakeFiles/rcx_lib.dir/netRC.cpp.o"
+  "CMakeFiles/rcx_lib.dir/netRC.cpp.o.d"
+  "librcx_lib.a"
+  "librcx_lib.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/rcx_lib.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

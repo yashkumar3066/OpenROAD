@@ -1,0 +1,5 @@
+if(EXISTS "/home/captainnothing/OpenROAD/build/src/rmp/test/cpp/RmpGTests[1]_tests.cmake")
+  include("/home/captainnothing/OpenROAD/build/src/rmp/test/cpp/RmpGTests[1]_tests.cmake")
+else()
+  add_test(RmpGTests_NOT_BUILT RmpGTests_NOT_BUILT)
+endif()

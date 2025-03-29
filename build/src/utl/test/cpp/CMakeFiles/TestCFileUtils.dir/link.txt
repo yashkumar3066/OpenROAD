@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/TestCFileUtils.dir/TestCFileUtils.cpp.o -o TestCFileUtils  ../../../../lib/libgtest.a ../../../../lib/libgtest_main.a ../../libutl_lib.a ../../../../lib/libgtest.a /usr/local/lib/libspdlog.a 

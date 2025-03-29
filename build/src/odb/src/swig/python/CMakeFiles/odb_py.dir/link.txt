@@ -1,0 +1,2 @@
+/usr/bin/ar qc _odb_py.a CMakeFiles/odb_py.dir/CMakeFiles/odb_py.dir/odbPYTHON_wrap.cxx.o "CMakeFiles/odb_py.dir/odb_py-pythonInitVar.cc.o"
+/usr/bin/ranlib _odb_py.a

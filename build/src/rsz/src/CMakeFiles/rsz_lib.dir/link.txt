@@ -1,0 +1,2 @@
+/usr/bin/ar qc librsz_lib.a CMakeFiles/rsz_lib.dir/BufferedNet.cc.o CMakeFiles/rsz_lib.dir/PreChecks.cc.o CMakeFiles/rsz_lib.dir/RecoverPower.cc.o CMakeFiles/rsz_lib.dir/RepairDesign.cc.o CMakeFiles/rsz_lib.dir/RepairHold.cc.o CMakeFiles/rsz_lib.dir/RepairSetup.cc.o CMakeFiles/rsz_lib.dir/Rebuffer.cc.o CMakeFiles/rsz_lib.dir/SteinerTree.cc.o CMakeFiles/rsz_lib.dir/EstimateWireParasitics.cc.o CMakeFiles/rsz_lib.dir/Resizer.cc.o
+/usr/bin/ranlib librsz_lib.a

@@ -1,0 +1,5 @@
+add_test([=[TestScanChain.CreateScanChain]=]  /home/captainnothing/OpenROAD/build/src/odb/test/cpp/scan/TestScanChain [==[--gtest_filter=TestScanChain.CreateScanChain]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[TestScanChain.CreateScanChain]=]  PROPERTIES WORKING_DIRECTORY /home/captainnothing/OpenROAD/src/odb/test/cpp/scan SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[TestScanChain.CreateScanChainWithPartition]=]  /home/captainnothing/OpenROAD/build/src/odb/test/cpp/scan/TestScanChain [==[--gtest_filter=TestScanChain.CreateScanChainWithPartition]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[TestScanChain.CreateScanChainWithPartition]=]  PROPERTIES WORKING_DIRECTORY /home/captainnothing/OpenROAD/src/odb/test/cpp/scan SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  TestScanChain_TESTS TestScanChain.CreateScanChain TestScanChain.CreateScanChainWithPartition)

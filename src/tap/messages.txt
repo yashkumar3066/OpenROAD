@@ -1,0 +1,18 @@
+TAP 0003 tapcell.cpp:541           Inserted {} endcap corners. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.cpp#L541
+TAP 0004 tapcell.cpp:544           Inserted {} endcaps. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.cpp#L544
+TAP 0005 tapcell.cpp:168           Inserted {} tapcells. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.cpp#L168
+TAP 0010 tapcell.tcl:170           Master $tapcell_master_name not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.tcl#L170
+TAP 0011 tapcell.tcl:180           Master $endcap_master_name not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.tcl#L180
+TAP 0014 tapcell.tcl:74            endcap_cpp option is deprecated. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.tcl#L74
+TAP 0015 tapcell.tcl:143           tbtie_cpp option is deprecated. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.tcl#L143
+TAP 0016 tapcell.tcl:147           no_cell_at_top_bottom option is deprecated. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.tcl#L147
+TAP 0020 tapcell.cpp:1218          Unable to fill {} boundary in {} from {:.4f}um to {:.4f}um ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.cpp#L1218
+TAP 0032 tapcell.cpp:344           Macro {} is not placed. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.cpp#L344
+TAP 0033 tapcell.cpp:379           Not able to build instance {} with master {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.cpp#L379
+TAP 0034 tapcell.tcl:218           Master $endcap_master_name not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.tcl#L218
+TAP 0035 tapcell.i:62              Master {} not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.i#L62
+TAP 0100 tapcell.tcl:251           Removed $taps_removed tapcells. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.tcl#L251
+TAP 0101 tapcell.tcl:253           Removed $endcaps_removed endcaps. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.tcl#L253
+TAP 0102 tapcell.tcl:386           Unable to find $master ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.tcl#L386
+TAP 0103 tapcell.tcl:413           $key0, $key1, or $key2 is required. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.tcl#L413
+TAP 0104 tapcell.cpp:1419          Unable to find a single master for {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/tap/src/tapcell.cpp#L1419

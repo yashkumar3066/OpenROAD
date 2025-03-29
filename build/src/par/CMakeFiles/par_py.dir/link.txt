@@ -1,0 +1,2 @@
+/usr/bin/ar qc _par_py.a "CMakeFiles/par_py.dir/CMakeFiles/par_py.dir/partitionmgr-pyPYTHON_wrap.cxx.o" "CMakeFiles/par_py.dir/par_py-pythonInitVar.cc.o"
+/usr/bin/ranlib _par_py.a

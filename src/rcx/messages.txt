@@ -1,0 +1,181 @@
+RCX 0001 ext.cpp:323               Reading SPEF file: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L323
+RCX 0002 ext.cpp:331               Filename is not defined! ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L331
+RCX 0003 netRC.cpp:2263            Read SPEF into extracted db! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L2263
+RCX 0004 netRC.cpp:2259            There is no extraction db! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L2259
+RCX 0005 netRC.cpp:2275            Can't open SPEF file {} to write. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L2275
+RCX 0007 extBench.cpp:486          Finished {} measurements for pattern MET_UNDER_MET INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extBench.cpp#L486
+RCX 0008 ext.cpp:237               extracting parasitics of {} ... INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L237
+RCX 0015 ext.cpp:254               Finished extracting {}. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L254
+RCX 0016 ext.cpp:292               Writing SPEF ... INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L292
+RCX 0017 ext.cpp:317               Finished writing SPEF ... INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L317
+RCX 0019 ext.cpp:381               diffing spef {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L381
+RCX 0021 ext.cpp:434               calibrate on spef file  {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L434
+RCX 0029 ext.cpp:190               Defined extraction corner {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L190
+RCX 0030 ext.cpp:201               The original process corner name is required ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L201
+RCX 0031 ext.cpp:210               Defined Derived extraction corner {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L210
+RCX 0040 netRC.cpp:1815            Final {} rc segments INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1815
+RCX 0042 extSpef.cpp:1585          {} nets finished INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpef.cpp#L1585
+RCX 0043 extFlow.cpp:1236          {} wires to be extracted INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extFlow.cpp#L1236
+RCX 0044 extSpefIn.cpp:2682        {} spef insts not found in db. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2682
+RCX 0045 netRC.cpp:1920            Extract {} nets, {} rsegs, {} caps, {} ccs INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1920
+RCX 0047 extSpef.cpp:1624          {} nets finished INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpef.cpp#L1624
+RCX 0048 extSpefIn.cpp:2673        {} db nets not read from spef. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2673
+RCX 0049 extSpefIn.cpp:2676        {} db insts not read from spef. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2676
+RCX 0050 extSpefIn.cpp:2679        {} spef nets not found in db. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2679
+RCX 0052 extSpefIn.cpp:2686        Unmatched spef and db! ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2686
+RCX 0055 extBench.cpp:295          Finished {} bench measurements for pattern MET_OVER_MET INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extBench.cpp#L295
+RCX 0057 extBench.cpp:355          Finished {} bench measurements for pattern MET_UNDER_MET INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extBench.cpp#L355
+RCX 0058 extBench.cpp:417          Finished {} bench measurements for pattern MET_DIAGUNDER_MET INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extBench.cpp#L417
+RCX 0060 extSpefIn.cpp:2629             merged {} coupling caps INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2629
+RCX 0065 extmain.cpp:657             layer {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmain.cpp#L657
+RCX 0069 extRCmodel.cpp:3448       {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3448
+RCX 0072 extRCmodel.cpp:3566       Can't find <OVER> rules for {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3566
+RCX 0074 extmeasure.cpp:81         Cannot find net {} from the {} table entry {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmeasure.cpp#L81
+RCX 0076 extSpefIn.cpp:587         Cap Node {} not extracted WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L587
+RCX 0077 extSpefIn.cpp:758         Spef net {} not found in db. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L758
+RCX 0078 extSpefIn.cpp:2254        Break simple loop of {} nets WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2254
+RCX 0079 extmeasure.cpp:1858       Have processed {} CC caps, and stored {} CC caps INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmeasure.cpp#L1858
+RCX 0081 extFlow.cpp:312           Die Area for the block has 0 size, or is undefined! ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extFlow.cpp#L312
+RCX 0082 extFlow.cpp:354           Layer {}, routing level {}, has pitch {}!! ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extFlow.cpp#L354
+RCX 0107 netRC.cpp:1928            Nothing is extracted out of {} nets! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1928
+RCX 0110 netRC.cpp:577             Net {} has no wires. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L577
+RCX 0111 netRC.cpp:625             Net {} {} has a loop at x={} y={} {}. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L625
+RCX 0112 netRC.cpp:723             Can't locate bterm {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L723
+RCX 0113 netRC.cpp:728             Can't locate iterm {}/{} ( {} ) ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L728
+RCX 0114 netRC.cpp:736             Net {} {} does not start from an iterm or a bterm. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L736
+RCX 0115 netRC.cpp:743             Net {} {} already has rseg! ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L743
+RCX 0120 netRC.cpp:1157            No matching process corner for scaled corner {}, model {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1157
+RCX 0121 netRC.cpp:1303            The corresponding process corner has to be defined using the  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1303
+RCX 0122 netRC.cpp:1319            A process corner for Extraction RC Model {} has already been  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1319
+RCX 0127 netRC.cpp:1727            No RC model was read with command <load_model>,  WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1727
+RCX 0128 netRC.cpp:1749            skipping Extraction ... INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1749
+RCX 0129 netRC.cpp:1753            Wrong combination of corner related options! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1753
+RCX 0134 netRC.cpp:2157            Can't execute write_spef command. There's no extraction data. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L2157
+RCX 0135 netRC.cpp:2082            Corner {} is out of range; There are {} corners in DB! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L2082
+RCX 0136 netRC.cpp:2106            Can't find corner name {} in the parasitics DB! INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L2106
+RCX 0137 netRC.cpp:2176            Can't open file \"{}\" to write spef. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L2176
+RCX 0138 extmain.cpp:335           {} layers are missing resistance value; Check LEF file.  WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmain.cpp#L335
+RCX 0139 extmain.cpp:327           Missing Resistance value for layer {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmain.cpp#L327
+RCX 0140 extmain.cpp:550           Have processed {} total segments, {} signal segments, {} CC  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmain.cpp#L550
+RCX 0141 extmain.cpp:635           Context of layer {} xy={} len={} base={} width={} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmain.cpp#L635
+RCX 0142 extmain.cpp:647             layer {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmain.cpp#L647
+RCX 0143 extmain.cpp:659               {}: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmain.cpp#L659
+RCX 0147 ext.cpp:175               bench_verilog: file is not defined! ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L175
+RCX 0148 ext.cpp:229               Extraction corner {} not found! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L229
+RCX 0149 OpenRCX.tcl:330           -db is deprecated. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/OpenRCX.tcl#L330
+RCX 0152 extprocess.cpp:294        Can't determine Top Width for Conductor <{}> WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extprocess.cpp#L294
+RCX 0153 extprocess.cpp:325        Can't determine thickness for Conductor <{}> WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extprocess.cpp#L325
+RCX 0154 extprocess.cpp:530        Can't determine thickness for Diel <{}> WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extprocess.cpp#L530
+RCX 0158 extprocess.cpp:269        Can't determine Bottom Width for Conductor <{}> WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extprocess.cpp#L269
+RCX 0159 extprocess.cpp:547        Can't open file {} with permissions <{}> ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extprocess.cpp#L547
+RCX 0171 extSpef.cpp:193           Can't open log file diff_spef.log for writing! ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpef.cpp#L193
+RCX 0172 extSpef.cpp:198           Can't open output file diff_spef.out for writing! ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpef.cpp#L198
+RCX 0175 extSpef.cpp:1142          Non-symmetric case feature is not implemented! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpef.cpp#L1142
+RCX 0176 extSpef.cpp:1420          Skip instance {} for cell {} is excluded INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpef.cpp#L1420
+RCX 0178 extSpefIn.cpp:2337        \" -N {} \" is unknown. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2337
+RCX 0208 extRCmodel.cpp:149        {} {} {} {}  {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L149
+RCX 0216 extRCmodel.cpp:3578       Can't find <UNDER> rules for {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3578
+RCX 0217 extRCmodel.cpp:3584       Can't find <OVERUNDER> rules for {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3584
+RCX 0218 extRCmodel.cpp:3633       Cannot write <OVER> rules for <DensityModel> {} and layer {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3633
+RCX 0219 extRCmodel.cpp:3646       Cannot write <UNDER> rules for <DensityModel> {} and layer {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3646
+RCX 0220 extRCmodel.cpp:3669       Cannot write <DIAGUNDER> rules for <DensityModel> {} and layer {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3669
+RCX 0221 extRCmodel.cpp:3682       Cannot write <OVERUNDER> rules for <DensityModel> {} and layer {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3682
+RCX 0222 extRCmodel.cpp:3928       There were {} extraction models defined but only {} exists  WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3928
+RCX 0223 extRCmodel.cpp:3952       Cannot find model index {} in extRules file {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3952
+RCX 0239 extFlow.cpp:1386          Zero rseg wire property {} on main net {} {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extFlow.cpp#L1386
+RCX 0240 extFlow.cpp:1397          GndCap: cannot find rseg for rsegId {} on net {} {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extFlow.cpp#L1397
+RCX 0252 extmain.cpp:63            Ext object on dbBlock is nullptr! ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmain.cpp#L63
+RCX 0258 extSpefIn.cpp:156         Spef instance {} not found in db. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L156
+RCX 0259 extSpefIn.cpp:188         Can't find bterm {} in db. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L188
+RCX 0260 extSpefIn.cpp:464         {} and {} are connected to a coupling cap of net {} {} in spef, but  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L464
+RCX 0261 extSpefIn.cpp:641         Cap Node {} not extracted WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L641
+RCX 0262 extSpefIn.cpp:558         Iterm {}/{} is connected to net {} {} in spef, but connected  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L558
+RCX 0263 extSpefIn.cpp:614         Bterm {} is connected to net {} {} in spef, but connected to  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L614
+RCX 0264 extSpefIn.cpp:902         Spef net {} not found in db. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L902
+RCX 0265 extSpefIn.cpp:1095        There is cc cap between net {} and net {} in db, but not in  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1095
+RCX 0266 extSpefIn.cpp:1148        There is cc cap between net {} and net {} in reference spef  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1148
+RCX 0267 extSpefIn.cpp:1349        {} has no shapes! INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1349
+RCX 0269 extSpefIn.cpp:1504        Cannot find coords of driver capNode {} of net {} {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1504
+RCX 0270 extSpefIn.cpp:1545        Driving node of net {} {} is not connected to a rseg. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1545
+RCX 0271 extSpefIn.cpp:1622        Cannot find node coords for targetCapNodeId {} of net {} {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1622
+RCX 0272 extSpefIn.cpp:1639        RC of net {} {} is disconnected! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1639
+RCX 0273 extSpefIn.cpp:1684        Failed to identify loop in net {} {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1684
+RCX 0274 extSpefIn.cpp:1691        {} capNodes loop in net {} {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1691
+RCX 0275 extSpefIn.cpp:1699            id={} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1699
+RCX 0276 extSpefIn.cpp:1701         cap-{}={} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1701
+RCX 0277 extSpefIn.cpp:1745        Break one simple loop of {}-rsegs net {} {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1745
+RCX 0278 extSpefIn.cpp:1772        {}-rsegs net {} {} has a {}-rsegs loop WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1772
+RCX 0279 extSpefIn.cpp:1799        {}-rsegs net {} {} has {} loops WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1799
+RCX 0280 extSpefIn.cpp:1857        Net {} {} has rseg before reading spef WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1857
+RCX 0281 extSpefIn.cpp:1913        \"-N s\" in read_spef command, but no coordinates  WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1913
+RCX 0282 extSpefIn.cpp:1998        Source capnode {} is the same as target capnode {}. Add  WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1998
+RCX 0283 extSpefIn.cpp:2243        Have read {} nets INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2243
+RCX 0284 extSpefIn.cpp:2251        There are {} nets with looped spef rc WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2251
+RCX 0285 extSpefIn.cpp:2585        Break simple loop of {} nets WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2585
+RCX 0286 extSpefIn.cpp:2382        Number of corners in SPEF file = 0. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2382
+RCX 0287 extSpefIn.cpp:2402        Cannot find corner name {} in DB INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2402
+RCX 0288 extSpefIn.cpp:2409        Ext corner {} out of range; There are only {} defined  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2409
+RCX 0289 extSpefIn.cpp:2423        Mismatch on the numbers of corners: Spef file has {} corners vs.  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2423
+RCX 0290 extSpefIn.cpp:2433        Spef corner {} out of range; There are only {} corners in Spef file INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2433
+RCX 0291 extSpefIn.cpp:2473        Have to specify option _db_corner_name INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2473
+RCX 0292 extSpefIn.cpp:2582        {} nets with looped spef rc WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2582
+RCX 0293 extSpefIn.cpp:2700        *{}{}{} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2700
+RCX 0294 extSpefIn.cpp:2718            First {} cc that appear {} times INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2718
+RCX 0295 extSpefIn.cpp:2822        There is no *PORTS section WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2822
+RCX 0296 extSpefIn.cpp:2852        There is no *NAME_MAP section WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2852
+RCX 0297 extSpefIn.cpp:2857        There is no *NAME_MAP section WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2857
+RCX 0298 extSpefIn.cpp:2859        There is no *PORTS section WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2859
+RCX 0357 OpenRCX.tcl:232           No LEF technology has been read. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/OpenRCX.tcl#L232
+RCX 0358 extRCmodel.cpp:3572       Can't find <RESOVER> Res rules for {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3572
+RCX 0374 extSpefIn.cpp:1607        Inconsistency in RC of net {} {}. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1607
+RCX 0376 netRC.cpp:2325            DB created {} nets, {} rsegs, {} caps, {} ccs INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L2325
+RCX 0378 ext.cpp:179               Can't open file {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L179
+RCX 0380 ext.cpp:378               Filename is not defined to run diff_spef command! ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L378
+RCX 0381 ext.cpp:429               Filename for calibration is not defined. Define the  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/ext.cpp#L429
+RCX 0404 extSpefIn.cpp:2393        Cannot find corner name {} in DB INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2393
+RCX 0405 extSpefIn.cpp:1791        {}-rsegs net {} {} has {} loops WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1791
+RCX 0406 extSpefIn.cpp:1738        Break one simple loop of {}-rsegs net {} {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1738
+RCX 0407 extSpefIn.cpp:1780        {}-rsegs net {} {} has a {}-rsegs loop WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L1780
+RCX 0410 extRCmodel.cpp:3620       Cannot write <OVER> Res rules for <DensityModel> {}  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3620
+RCX 0411 extRCmodel.cpp:2773       \ttotFrCap for netId {}({}) {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L2773
+RCX 0414 extRCmodel.cpp:2767       \tfrCap from CC for netId {}({}) {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L2767
+RCX 0416 extRCmodel.cpp:2749       \tccCap for netIds {}({}), {}({}) {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L2749
+RCX 0417 extRCmodel.cpp:2731       FrCap for netId {} (nodeId= {})  {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L2731
+RCX 0418 extRCmodel.cpp:2707       Reads only {} nodes from {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L2707
+RCX 0431 netRC.cpp:1260            Defined process_corner {} with ext_model_index {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1260
+RCX 0433 netRC.cpp:1236            A process corner {} for Extraction RC Model {} has already been  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1236
+RCX 0434 netRC.cpp:1266            Defined process_corner {} with ext_model_index {} (using  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1266
+RCX 0435 netRC.cpp:1605            Reading extraction model file {} ... INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1605
+RCX 0436 netRC.cpp:1787            RC segment generation {} (max_merge_res {:.1f}) ... INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1787
+RCX 0437 netRC.cpp:100             RECT {} ( {} {} ) ( {} {} )  jids= ( {} {} ) INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L100
+RCX 0438 netRC.cpp:89              VIA {} ( {} {} )  jids= ( {} {} ) INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L89
+RCX 0439 netRC.cpp:1819            Coupling Cap extraction {} ... INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1819
+RCX 0440 netRC.cpp:1830            Coupling threshhold is {:.4f} fF, coupling capacitance  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1830
+RCX 0442 extFlow.cpp:1356          {:d}% completion -- {:d} wires have been extracted INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extFlow.cpp#L1356
+RCX 0443 extSpef.cpp:1591          {} nets finished INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpef.cpp#L1591
+RCX 0444 extSpefIn.cpp:2264        Read {} D_NET nets, {} resistors, {} gnd caps {} coupling caps INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2264
+RCX 0445 extSpefIn.cpp:2555        Have read {} D_NET nets, {} resistors, {} gnd caps {} coupling  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2555
+RCX 0447 extSpefIn.cpp:2661        Db inst {} {} not read from spef file! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2661
+RCX 0448 extSpefIn.cpp:2649        Db net {} {} not read from spef file! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2649
+RCX 0449 extSpefIn.cpp:2707        {}  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2707
+RCX 0451 extSpefIn.cpp:2710        {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2710
+RCX 0452 extSpefIn.cpp:82          Spef instance {} not found in db. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L82
+RCX 0456 extmeasure.cpp:962        pixelTable gave len {}, bigger than expected {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmeasure.cpp#L962
+RCX 0458 extmeasure.cpp:1031       pixelTable gave len {}, bigger than expected {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmeasure.cpp#L1031
+RCX 0459 extmeasure.cpp:641        getOverUnderIndex: out of range n= {}   m={} u= {} o= {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmeasure.cpp#L641
+RCX 0460 extmeasure.cpp:91         Cannot find dbRseg for net {} from the {} table entry {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmeasure.cpp#L91
+RCX 0463 extSpefIn.cpp:2619        Have read {} D_NET nets, {} resistors, {} gnd caps {} coupling caps INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2619
+RCX 0464 extSpefIn.cpp:2632        Broke {} coupling caps of {} fF or smaller INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpefIn.cpp#L2632
+RCX 0465 extSpef.cpp:1621          {} nets finished INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extSpef.cpp#L1621
+RCX 0468 netRC.cpp:1610            Can't open extraction model file {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1610
+RCX 0472 netRC.cpp:1286            The corresponding process corner has to be defined using the  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1286
+RCX 0474 netRC.cpp:2044            Can't execute write_spef command. There's no block in db! INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L2044
+RCX 0475 netRC.cpp:2141            Can't execute write_spef command. There's no block in db INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L2141
+RCX 0476 extmain.cpp:649               {}: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmain.cpp#L649
+RCX 0480 netRC.cpp:2343                cc appearance count -- 1:{} 2:{} 3:{} 4:{} 5:{} 6:{}  INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L2343
+RCX 0485 extRCmodel.cpp:2643       Cannot open file {} with permissions {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L2643
+RCX 0487 netRC.cpp:1632            No RC model read from the extraction model!  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/netRC.cpp#L1632
+RCX 0489 extRCmodel.cpp:3155       mv failed: {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3155
+RCX 0490 extRCmodel.cpp:3450       system failed: {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3450
+RCX 0491 extRCmodel.cpp:3459       rm failed on {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extRCmodel.cpp#L3459
+RCX 0497 extmain.cpp:370           No design is loaded. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/rcx/src/extmain.cpp#L370

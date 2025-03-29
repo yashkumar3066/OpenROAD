@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdft_config_lib.a CMakeFiles/dft_config_lib.dir/DftConfig.cpp.o CMakeFiles/dft_config_lib.dir/ScanArchitectConfig.cpp.o
+/usr/bin/ranlib libdft_config_lib.a

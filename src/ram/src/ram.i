@@ -134,7 +134,7 @@ generate_ram_netlist_cmd(int bytes_per_word,
   }
 
   // Call generate with the correct parameters
-  ram_gen->generate(bytes_per_word, word_count, read_ports,
+  ram_gen->generate_ram_netlist(bytes_per_word, word_count, read_ports,
                     storage_cell, tristate_cell, inv_cell, mask);
 }
 

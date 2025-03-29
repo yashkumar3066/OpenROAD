@@ -1,0 +1,5 @@
+if(EXISTS "/home/captainnothing/OpenROAD/build/src/cts/test/cts_unittest[1]_tests.cmake")
+  include("/home/captainnothing/OpenROAD/build/src/cts/test/cts_unittest[1]_tests.cmake")
+else()
+  add_test(cts_unittest_NOT_BUILT cts_unittest_NOT_BUILT)
+endif()

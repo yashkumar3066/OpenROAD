@@ -1,0 +1,39 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "src/dpl/CMakeFiles/dpl.dir/OpendpTCL_wrap.cxx" "custom" "src/dpl/CMakeFiles/dpl.dir/Opendp.i.d"
+  "/home/captainnothing/OpenROAD/build/src/dpl/CMakeFiles/dpl.dir/OpendpTCL_wrap.cxx" "src/dpl/CMakeFiles/dpl.dir/CMakeFiles/dpl.dir/OpendpTCL_wrap.cxx.o" "gcc" "src/dpl/CMakeFiles/dpl.dir/CMakeFiles/dpl.dir/OpendpTCL_wrap.cxx.o.d"
+  "/home/captainnothing/OpenROAD/build/src/dpl/dpl-tclInitVar.cc" "src/dpl/CMakeFiles/dpl.dir/dpl-tclInitVar.cc.o" "gcc" "src/dpl/CMakeFiles/dpl.dir/dpl-tclInitVar.cc.o.d"
+  "/home/captainnothing/OpenROAD/src/dpl/src/Graphics.cpp" "src/dpl/CMakeFiles/dpl.dir/src/Graphics.cpp.o" "gcc" "src/dpl/CMakeFiles/dpl.dir/src/Graphics.cpp.o.d"
+  "/home/captainnothing/OpenROAD/src/dpl/src/MakeOpendp.cpp" "src/dpl/CMakeFiles/dpl.dir/src/MakeOpendp.cpp.o" "gcc" "src/dpl/CMakeFiles/dpl.dir/src/MakeOpendp.cpp.o.d"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/captainnothing/OpenROAD/build/src/dpl/CMakeFiles/dpl_lib.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/sta/CMakeFiles/OpenSTA.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/gui/CMakeFiles/gui.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/odb/src/cdl/CMakeFiles/cdl.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/odb/src/defin/CMakeFiles/defin.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/odb/src/def/CMakeFiles/def.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/odb/src/def/CMakeFiles/defzlib.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/odb/src/defout/CMakeFiles/defout.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/odb/src/lefin/CMakeFiles/lefin.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/odb/src/lef/CMakeFiles/lef.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/odb/src/lef/CMakeFiles/lefzlib.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/odb/src/lefout/CMakeFiles/lefout.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/odb/src/db/CMakeFiles/db.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/odb/src/zutil/CMakeFiles/zutil.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/utl/CMakeFiles/utl.dir/DependInfo.cmake"
+  "/home/captainnothing/OpenROAD/build/src/utl/CMakeFiles/utl_lib.dir/DependInfo.cmake"
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

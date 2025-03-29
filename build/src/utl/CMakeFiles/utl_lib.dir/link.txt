@@ -1,0 +1,2 @@
+/usr/bin/ar qc libutl_lib.a CMakeFiles/utl_lib.dir/src/Metrics.cpp.o CMakeFiles/utl_lib.dir/src/CFileUtils.cpp.o CMakeFiles/utl_lib.dir/src/ScopedTemporaryFile.cpp.o CMakeFiles/utl_lib.dir/src/Logger.cpp.o CMakeFiles/utl_lib.dir/src/timer.cpp.o
+/usr/bin/ranlib libutl_lib.a

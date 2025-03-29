@@ -1,0 +1,10 @@
+UTL 0001 CFileUtils.cpp:8          seeking file to start {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/utl/src/CFileUtils.cpp#L8
+UTL 0002 CFileUtils.cpp:25         error reading {} bytes from file at offset {}: {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/utl/src/CFileUtils.cpp#L25
+UTL 0003 CFileUtils.cpp:35         read no bytes from file at offset {}, but neither error nor EOF ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/utl/src/CFileUtils.cpp#L35
+UTL 0004 CFileUtils.cpp:56         error writing {} bytes from file at offset {}: {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/utl/src/CFileUtils.cpp#L56
+UTL 0005 ScopedTemporaryFile.cpp:28 could not create temp file ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/utl/src/ScopedTemporaryFile.cpp#L28
+UTL 0006 ScopedTemporaryFile.cpp:31 ScopedTemporaryFile; fd: {} path: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/utl/src/ScopedTemporaryFile.cpp#L31
+UTL 0007 ScopedTemporaryFile.cpp:35 could not open temp descriptor as FILE ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/utl/src/ScopedTemporaryFile.cpp#L35
+UTL 0008 ScopedTemporaryFile.cpp:43 could not unlink temp file at {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/utl/src/ScopedTemporaryFile.cpp#L43
+UTL 0009 ScopedTemporaryFile.cpp:47 could not close temp file: {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/utl/src/ScopedTemporaryFile.cpp#L47
+UTL 0100 Utl.tcl:127               Man page for $name is not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/utl/src/Utl.tcl#L127

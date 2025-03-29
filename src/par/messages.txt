@@ -1,0 +1,38 @@
+PAR 0001 PartitionMgr.cpp:762      Writing partition to verilog. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/PartitionMgr.cpp#L762
+PAR 0002 TritonPart.cpp:234        Partitioning hypergraph. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L234
+PAR 0003 TritonPart.cpp:275        Timing-driven mode is not supported! Disabling timing aware. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L275
+PAR 0004 TritonPart.cpp:323        Partitioning netlist. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L323
+PAR 0005 TritonPart.cpp:392        Reading netlist. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L392
+PAR 0006 TritonPart.cpp:446        Updated solution file name: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L446
+PAR 0007 TritonPart.cpp:481        Evaluating hypergraph partitioning solution. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L481
+PAR 0008 TritonPart.cpp:521        Cannot open the solution file : {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L521
+PAR 0009 TritonPart.cpp:532        Timing-driven mode is not supported! Disabling timing aware. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L532
+PAR 0010 TritonPart.cpp:692        Evaluating netlist partitioning solution. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L692
+PAR 0011 TritonPart.cpp:769        Reading netlist. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L769
+PAR 0012 TritonPart.cpp:886        Writing hypergraph. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L886
+PAR 0013 TritonPart.cpp:892        Writing integer weight hypergraph. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L892
+PAR 0015 PartitionMgr.cpp:771      Property 'partition_id' not found for inst {}. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/PartitionMgr.cpp#L771
+PAR 0017 TritonPart.cpp:1216       Read hypergraph has {} vertices and {} hyperedges. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1216
+PAR 0018 TritonPart.cpp:1527       Read netlist has {} vertices, {} hyperedges and {} timing paths. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1527
+PAR 0019 TritonPart.cpp:1736       The traversed timing graph has {} unconstrained hyperedges! WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1736
+PAR 0021 TritonPart.cpp:1351       Cannot open the fixed instance file : {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1351
+PAR 0022 TritonPart.cpp:1378       Cannot open the community file : {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1378
+PAR 0023 TritonPart.cpp:1405       Cannot open the group file : {} WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1405
+PAR 0024 TritonPart.cpp:1544       Timing driven partitioning is disabled WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1544
+PAR 0025 PartitionMgr.cpp:838      Unable to open file {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/PartitionMgr.cpp#L838
+PAR 0026 PartitionMgr.cpp:847      Unable to find instance {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/PartitionMgr.cpp#L847
+PAR 0027 PartitionMgr.cpp:870      Unable to convert line \"{}\" to an integer in file: {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/PartitionMgr.cpp#L870
+PAR 0028 PartitionMgr.cpp:881      Instances in partitioning ({}) does not match instances in  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/PartitionMgr.cpp#L881
+PAR 0029 TritonPart.cpp:901        Cannot open the solution file : {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L901
+PAR 0030 TritonPart.cpp:997        Cannot open the input hypergraph file : {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L997
+PAR 0031 TritonPart.cpp:1078       Cannot open the fixed file : {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1078
+PAR 0032 TritonPart.cpp:1096       Cannot open the community file : {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1096
+PAR 0033 TritonPart.cpp:1117       Cannot open the group file : {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1117
+PAR 0034 TritonPart.cpp:1140       Cannot open the placement file : {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1140
+PAR 0035 TritonPart.cpp:1501       There are no vertices or hyperedges ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1501
+PAR 0036 PartitionMgr.cpp:860      Unable to open file {}. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/PartitionMgr.cpp#L860
+PAR 0037 TritonPart.cpp:1496       Extracting timing paths. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/TritonPart.cpp#L1496
+PAR 0051 partitionmgr.tcl:1015     Missing mandatory argument -read_file ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/partitionmgr.tcl#L1015
+PAR 0142 Evaluator.cpp:286         This no timing-critical paths when calling GetTimingCuts() WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/Evaluator.cpp#L286
+PAR 0924 partitionmgr.tcl:114      Missing mandatory argument -hypergraph_file. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/partitionmgr.tcl#L114
+PAR 0925 partitionmgr.tcl:350      Missing mandatory argument -hypergraph_file. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/par/src/partitionmgr.tcl#L350

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdft_base_scan_cell_lib.a CMakeFiles/dft_base_scan_cell_lib.dir/ScanCell.cpp.o
+/usr/bin/ranlib libdft_base_scan_cell_lib.a

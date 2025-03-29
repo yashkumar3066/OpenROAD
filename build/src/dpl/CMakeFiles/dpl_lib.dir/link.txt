@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdpl_lib.a CMakeFiles/dpl_lib.dir/src/Opendp.cpp.o CMakeFiles/dpl_lib.dir/src/dbToOpendp.cpp.o CMakeFiles/dpl_lib.dir/src/Grid.cpp.o CMakeFiles/dpl_lib.dir/src/CheckPlacement.cpp.o CMakeFiles/dpl_lib.dir/src/Place.cpp.o CMakeFiles/dpl_lib.dir/src/FillerPlacement.cpp.o CMakeFiles/dpl_lib.dir/src/OptMirror.cpp.o
+/usr/bin/ranlib libdpl_lib.a

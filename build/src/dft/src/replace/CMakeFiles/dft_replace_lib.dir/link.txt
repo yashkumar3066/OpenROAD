@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdft_replace_lib.a CMakeFiles/dft_replace_lib.dir/ScanReplace.cpp.o
+/usr/bin/ranlib libdft_replace_lib.a

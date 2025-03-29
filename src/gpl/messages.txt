@@ -1,0 +1,94 @@
+GPL 0002 placerBase.cpp:778        DBU: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L778
+GPL 0003 placerBase.cpp:806        SiteSize: {} {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L806
+GPL 0004 placerBase.cpp:807        CoreAreaLxLy: {} {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L807
+GPL 0005 placerBase.cpp:808        CoreAreaUxUy: {} {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L808
+GPL 0006 placerBase.cpp:1263       NumInstances: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1263
+GPL 0007 placerBase.cpp:1267       NumPlaceInstances: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1267
+GPL 0008 placerBase.cpp:1268       NumFixedInstances: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1268
+GPL 0009 placerBase.cpp:1269       NumDummyInstances: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1269
+GPL 0010 placerBase.cpp:1270       NumNets: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1270
+GPL 0011 placerBase.cpp:1271       NumPins: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1271
+GPL 0012 placerBase.cpp:1273       DieAreaLxLy: {} {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1273
+GPL 0013 placerBase.cpp:1274       DieAreaUxUy: {} {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1274
+GPL 0014 placerBase.cpp:1275       CoreAreaLxLy: {} {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1275
+GPL 0015 placerBase.cpp:1276       CoreAreaUxUy: {} {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1276
+GPL 0016 placerBase.cpp:1282       CoreArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1282
+GPL 0017 placerBase.cpp:1283       NonPlaceInstsArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1283
+GPL 0018 placerBase.cpp:1285       PlaceInstsArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1285
+GPL 0019 placerBase.cpp:1286       Util(%): {:.2f} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1286
+GPL 0020 placerBase.cpp:1288       StdInstsArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1288
+GPL 0021 placerBase.cpp:1289       MacroInstsArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1289
+GPL 0023 nesterovBase.cpp:614      TargetDensity: {:.2f} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L614
+GPL 0024 nesterovBase.cpp:615      AveragePlaceInstArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L615
+GPL 0025 nesterovBase.cpp:616      IdealBinArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L616
+GPL 0026 nesterovBase.cpp:617      IdealBinCnt: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L617
+GPL 0027 nesterovBase.cpp:618      TotalBinArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L618
+GPL 0028 nesterovBase.cpp:648      BinCnt: {} {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L648
+GPL 0029 nesterovBase.cpp:653      BinSize: {} {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L653
+GPL 0030 nesterovBase.cpp:670      NumBins: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L670
+GPL 0031 nesterovBase.cpp:1292     FillerInit: NumGCells: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L1292
+GPL 0032 nesterovBase.cpp:1293     FillerInit: NumGNets: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L1293
+GPL 0033 nesterovBase.cpp:1294     FillerInit: NumGPins: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L1294
+GPL 0034 nesterovBase.cpp:1651     gCellFiller: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L1651
+GPL 0035 nesterovBase.cpp:1669     NewTotalFillerArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L1669
+GPL 0036 routeBase.cpp:149         TileLxLy: {} {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L149
+GPL 0037 routeBase.cpp:150         TileSize: {} {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L150
+GPL 0038 routeBase.cpp:151         TileCnt: {} {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L151
+GPL 0039 routeBase.cpp:152         numRoutingLayers: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L152
+GPL 0040 routeBase.cpp:174         NumTiles: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L174
+GPL 0045 routeBase.cpp:608         InflatedAreaDelta: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L608
+GPL 0046 routeBase.cpp:609         TargetDensity: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L609
+GPL 0047 routeBase.cpp:627         SavedMinRC: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L627
+GPL 0048 routeBase.cpp:628         SavedTargetDensity: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L628
+GPL 0049 routeBase.cpp:640         WhiteSpaceArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L640
+GPL 0050 routeBase.cpp:641         NesterovInstsArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L641
+GPL 0051 routeBase.cpp:642         TotalFillerArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L642
+GPL 0052 routeBase.cpp:643         TotalGCellsArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L643
+GPL 0053 routeBase.cpp:647         ExpectedTotalGCellsArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L647
+GPL 0054 routeBase.cpp:666         NewTargetDensity: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L666
+GPL 0055 routeBase.cpp:667         NewWhiteSpaceArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L667
+GPL 0056 routeBase.cpp:668         MovableArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L668
+GPL 0057 routeBase.cpp:669         NewNesterovInstsArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L669
+GPL 0058 routeBase.cpp:671         NewTotalFillerArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L671
+GPL 0059 routeBase.cpp:672         NewTotalGCellsArea: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L672
+GPL 0063 routeBase.cpp:738         TotalRouteOverflowH2: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L738
+GPL 0064 routeBase.cpp:739         TotalRouteOverflowV2: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L739
+GPL 0065 routeBase.cpp:740         OverflowTileCnt2: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L740
+GPL 0066 routeBase.cpp:795         0.5%RC: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L795
+GPL 0067 routeBase.cpp:796         1.0%RC: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L796
+GPL 0068 routeBase.cpp:797         2.0%RC: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L797
+GPL 0069 routeBase.cpp:798         5.0%RC: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L798
+GPL 0070 routeBase.cpp:800         0.5rcK: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L800
+GPL 0071 routeBase.cpp:801         1.0rcK: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L801
+GPL 0072 routeBase.cpp:802         2.0rcK: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L802
+GPL 0073 routeBase.cpp:803         5.0rcK: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L803
+GPL 0074 routeBase.cpp:811         FinalRC: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L811
+GPL 0075 routeBase.cpp:824         Routability numCall: {} inflationIterCnt: {} bloatIterCnt: {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/routeBase.cpp#L824
+GPL 0100 timingBase.cpp:163        worst slack {:.3g} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/timingBase.cpp#L163
+GPL 0102 timingBase.cpp:166        No slacks found. Timing-driven mode disabled. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/timingBase.cpp#L166
+GPL 0103 timingBase.cpp:204        Weighted {} nets. INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/timingBase.cpp#L204
+GPL 0114 timingBase.cpp:153        No net slacks found. Timing-driven mode disabled. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/timingBase.cpp#L153
+GPL 0115 replace.tcl:144           -disable_timing_driven is deprecated. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/replace.tcl#L144
+GPL 0116 replace.tcl:156           -disable_routability_driven is deprecated. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/replace.tcl#L156
+GPL 0118 placerBase.cpp:797        core area outside of die. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L797
+GPL 0119 placerBase.cpp:840        instance {} height is larger than core. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L840
+GPL 0120 placerBase.cpp:844        instance {} width is larger than core. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L844
+GPL 0121 replace.tcl:116           No liberty libraries found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/replace.tcl#L116
+GPL 0122 mbff.cpp:164              {} is not in 2^[0,{}] ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/mbff.cpp#L164
+GPL 0130 replace.tcl:315           No rows defined in design. Use initialize_floorplan to add rows. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/replace.tcl#L315
+GPL 0131 replace.tcl:416           No rows defined in design. Use initialize_floorplan to add rows. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/replace.tcl#L416
+GPL 0132 replace.cpp:186           Locked {} instances INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/replace.cpp#L186
+GPL 0133 replace.cpp:203           Unlocked instances INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/replace.cpp#L203
+GPL 0134 placerBase.cpp:109        Master {} is not marked as a BLOCK in LEF but is more  WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L109
+GPL 0135 replace.tcl:178           Target density must be in \[0, 1\]. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/replace.tcl#L178
+GPL 0136 replace.cpp:290           No placeable instances - skipping placement. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/replace.cpp#L290
+GPL 0150 replace.tcl:120           -skip_io will disable timing driven mode. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/replace.tcl#L120
+GPL 0151 replace.tcl:151           -skip_io will disable routability driven mode. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/replace.tcl#L151
+GPL 0250 initialPlace.cpp:104      GPU is not available. CPU solve is being used. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/initialPlace.cpp#L104
+GPL 0251 initialPlace.cpp:109      CPU solver is forced to be used. WARN https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/initialPlace.cpp#L109
+GPL 0301 placerBase.cpp:1292       Utilization exceeds 100%. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L1292
+GPL 0302 nesterovBase.cpp:1401     Use a higher -density or  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L1401
+GPL 0303 nesterovBase.cpp:1633     Use a higher -density or  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovBase.cpp#L1633
+GPL 0304 nesterovPlace.cpp:267     RePlAce diverged at initial iteration with steplength being {}.  ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/nesterovPlace.cpp#L267
+GPL 0305 placerBase.cpp:791        Unable to find a site ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/placerBase.cpp#L791
+GPL 9032 mbff.cpp:546              Could not recognize port {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/gpl/src/mbff.cpp#L546

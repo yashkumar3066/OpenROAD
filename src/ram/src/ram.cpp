@@ -204,7 +204,7 @@ std::unique_ptr<Element> RamGen::make_buffer(
 }
 
 
-void RamGen::generate(const int bytes_per_word,
+void RamGen::generate_ram_netlist(const int bytes_per_word,
                     const int word_count,
                     const int read_ports,
                     dbMaster* storage_cell,

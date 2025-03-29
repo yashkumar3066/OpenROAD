@@ -1,0 +1,2 @@
+/usr/bin/ar qc dft.a CMakeFiles/dft.dir/CMakeFiles/dft.dir/dftTCL_wrap.cxx.o "CMakeFiles/dft.dir/dft-tclInitVar.cc.o" CMakeFiles/dft.dir/src/Dft.cpp.o CMakeFiles/dft.dir/src/MakeDft.cpp.o
+/usr/bin/ranlib dft.a

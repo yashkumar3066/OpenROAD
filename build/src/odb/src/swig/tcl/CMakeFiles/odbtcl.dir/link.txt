@@ -1,0 +1,2 @@
+/usr/bin/ar qc odbtcl.a CMakeFiles/odbtcl.dir/CMakeFiles/odbtcl.dir/odbTCL_wrap.cxx.o
+/usr/bin/ranlib odbtcl.a

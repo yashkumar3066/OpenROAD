@@ -1,0 +1,33 @@
+/home/captainnothing/OpenROAD/build/src/rsz/src/CMakeFiles/rsz.dir/ResizerTCL_wrap.cxx: \
+  /usr/local/share/swig/4.1.0/swig.swg \
+  /usr/local/share/swig/4.1.0/swigwarnings.swg \
+  /usr/local/share/swig/4.1.0/swigwarn.swg \
+  /usr/local/share/swig/4.1.0/swigfragments.swg \
+  /usr/local/share/swig/4.1.0/tcl/tcl8.swg \
+  /usr/local/share/swig/4.1.0/tcl/tclmacros.swg \
+  /usr/local/share/swig/4.1.0/typemaps/swigmacros.swg \
+  /usr/local/share/swig/4.1.0/tcl/tclruntime.swg \
+  /usr/local/share/swig/4.1.0/tcl/tcluserdir.swg \
+  /usr/local/share/swig/4.1.0/tcl/tcltypemaps.swg \
+  /usr/local/share/swig/4.1.0/typemaps/fragments.swg \
+  /usr/local/share/swig/4.1.0/tcl/tclfragments.swg \
+  /usr/local/share/swig/4.1.0/tcl/tclprimtypes.swg \
+  /usr/local/share/swig/4.1.0/tcl/tclstrings.swg \
+  /usr/local/share/swig/4.1.0/typemaps/swigtypemaps.swg \
+  /usr/local/share/swig/4.1.0/typemaps/exception.swg \
+  /usr/local/share/swig/4.1.0/typemaps/swigtype.swg \
+  /usr/local/share/swig/4.1.0/typemaps/void.swg \
+  /usr/local/share/swig/4.1.0/typemaps/swigobject.swg \
+  /usr/local/share/swig/4.1.0/typemaps/valtypes.swg \
+  /usr/local/share/swig/4.1.0/typemaps/ptrtypes.swg \
+  /usr/local/share/swig/4.1.0/typemaps/inoutlist.swg \
+  /usr/local/share/swig/4.1.0/typemaps/primtypes.swg \
+  /usr/local/share/swig/4.1.0/typemaps/string.swg \
+  /usr/local/share/swig/4.1.0/typemaps/strings.swg \
+  /usr/local/share/swig/4.1.0/typemaps/misctypes.swg \
+  /usr/local/share/swig/4.1.0/typemaps/enumint.swg \
+  /usr/local/share/swig/4.1.0/tcl/tclopers.swg \
+  /usr/local/share/swig/4.1.0/tcl/tclkw.swg \
+  /usr/local/share/swig/4.1.0/tcl/tclinit.swg \
+  /home/captainnothing/OpenROAD/src/rsz/src/Resizer.i \
+  /home/captainnothing/OpenROAD/src/rsz/src/../../Exception.i 

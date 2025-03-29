@@ -1,0 +1,2 @@
+/usr/bin/ar qc libzutil.a CMakeFiles/zutil.dir/parse.cpp.o CMakeFiles/zutil.dir/poly_decomp.cpp.o CMakeFiles/zutil.dir/util.cpp.o
+/usr/bin/ranlib libzutil.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc stt.a CMakeFiles/stt.dir/CMakeFiles/stt.dir/SteinerTreeBuilderTCL_wrap.cxx.o "CMakeFiles/stt.dir/stt-tclInitVar.cc.o" CMakeFiles/stt.dir/src/MakeSteinerTreeBuilder.cpp.o CMakeFiles/stt.dir/src/LinesRenderer.cpp.o
+/usr/bin/ranlib stt.a

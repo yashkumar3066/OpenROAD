@@ -1,0 +1,5 @@
+if(EXISTS "/home/captainnothing/OpenROAD/build/src/gpl/test/fft_test[1]_tests.cmake")
+  include("/home/captainnothing/OpenROAD/build/src/gpl/test/fft_test[1]_tests.cmake")
+else()
+  add_test(fft_test_NOT_BUILT fft_test_NOT_BUILT)
+endif()

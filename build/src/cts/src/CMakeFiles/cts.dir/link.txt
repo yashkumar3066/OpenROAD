@@ -1,0 +1,2 @@
+/usr/bin/ar qc cts.a CMakeFiles/cts.dir/CMakeFiles/cts.dir/TritonCTSTCL_wrap.cxx.o "CMakeFiles/cts.dir/cts-tclInitVar.cc.o" CMakeFiles/cts.dir/MakeTritoncts.cpp.o CMakeFiles/cts.dir/CtsGraphics.cpp.o
+/usr/bin/ranlib cts.a

@@ -1,0 +1,246 @@
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS__-Wno-c++11-narrowing failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_44261/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_44261.dir/build.make CMakeFiles/cmTC_44261.dir/build
+gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_44261.dir/src.c.o
+/usr/bin/cc   -DC_COMPILER_SUPPORTS__-Wno-c++11-narrowing -Wno-c++11-narrowing -o CMakeFiles/cmTC_44261.dir/src.c.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+cc1: note: unrecognized command-line option '-Wno-c++11-narrowing' may have been intended to silence earlier diagnostics
+Linking C executable cmTC_44261
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44261.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_44261.dir/src.c.o -o cmTC_44261 
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS__-Wno-c++11-narrowing failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_73727/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_73727.dir/build.make CMakeFiles/cmTC_73727.dir/build
+gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_73727.dir/src.cxx.o
+/usr/bin/c++   -DCXX_COMPILER_SUPPORTS__-Wno-c++11-narrowing -Wno-c++11-narrowing -o CMakeFiles/cmTC_73727.dir/src.cxx.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+cc1plus: note: unrecognized command-line option '-Wno-c++11-narrowing' may have been intended to silence earlier diagnostics
+Linking CXX executable cmTC_73727
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73727.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_73727.dir/src.cxx.o -o cmTC_73727 
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS__-Wno-register failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_22208/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_22208.dir/build.make CMakeFiles/cmTC_22208.dir/build
+gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_22208.dir/src.c.o
+/usr/bin/cc   -DC_COMPILER_SUPPORTS__-Wno-register -Wno-register -o CMakeFiles/cmTC_22208.dir/src.c.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option '-Wno-register' is valid for C++/ObjC++ but not for C
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_22208
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22208.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_22208.dir/src.c.o -o cmTC_22208 
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS__-Wno-reserved-user-defined-literal failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_18635/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_18635.dir/build.make CMakeFiles/cmTC_18635.dir/build
+gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_18635.dir/src.c.o
+/usr/bin/cc   -DC_COMPILER_SUPPORTS__-Wno-reserved-user-defined-literal -Wno-reserved-user-defined-literal -o CMakeFiles/cmTC_18635.dir/src.c.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+cc1: note: unrecognized command-line option '-Wno-reserved-user-defined-literal' may have been intended to silence earlier diagnostics
+Linking C executable cmTC_18635
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18635.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_18635.dir/src.c.o -o cmTC_18635 
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS__-Wno-reserved-user-defined-literal failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_333a9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_333a9.dir/build.make CMakeFiles/cmTC_333a9.dir/build
+gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_333a9.dir/src.cxx.o
+/usr/bin/c++   -DCXX_COMPILER_SUPPORTS__-Wno-reserved-user-defined-literal -Wno-reserved-user-defined-literal -o CMakeFiles/cmTC_333a9.dir/src.cxx.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+cc1plus: note: unrecognized command-line option '-Wno-reserved-user-defined-literal' may have been intended to silence earlier diagnostics
+Linking CXX executable cmTC_333a9
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_333a9.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_333a9.dir/src.cxx.o -o cmTC_333a9 
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS__-fpermissive failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_882c3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_882c3.dir/build.make CMakeFiles/cmTC_882c3.dir/build
+gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_882c3.dir/src.c.o
+/usr/bin/cc   -DC_COMPILER_SUPPORTS__-fpermissive -fpermissive -o CMakeFiles/cmTC_882c3.dir/src.c.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option '-fpermissive' is valid for C++/ObjC++ but not for C
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_882c3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_882c3.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_882c3.dir/src.c.o -o cmTC_882c3 
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS__-x failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ed1be/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ed1be.dir/build.make CMakeFiles/cmTC_ed1be.dir/build
+gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed1be.dir/src.c.o
+/usr/bin/cc   -DC_COMPILER_SUPPORTS__-x -x -o CMakeFiles/cmTC_ed1be.dir/src.c.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.c
+cc: error: language -o not recognized
+cc: error: language -o not recognized
+cc: error: language -o not recognized
+cc: error: language -o not recognized
+gmake[1]: *** [CMakeFiles/cmTC_ed1be.dir/build.make:78: CMakeFiles/cmTC_ed1be.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_ed1be/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS__-x failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6fa16/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6fa16.dir/build.make CMakeFiles/cmTC_6fa16.dir/build
+gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6fa16.dir/src.cxx.o
+/usr/bin/c++   -DCXX_COMPILER_SUPPORTS__-x -x -o CMakeFiles/cmTC_6fa16.dir/src.cxx.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: language -o not recognized
+c++: error: language -o not recognized
+c++: error: language -o not recognized
+c++: error: language -o not recognized
+gmake[1]: *** [CMakeFiles/cmTC_6fa16.dir/build.make:78: CMakeFiles/cmTC_6fa16.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_6fa16/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS__c++ failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_86e8e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_86e8e.dir/build.make CMakeFiles/cmTC_86e8e.dir/build
+gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86e8e.dir/src.c.o
+/usr/bin/cc   -DC_COMPILER_SUPPORTS__c++ c++ -o CMakeFiles/cmTC_86e8e.dir/src.c.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+cc: warning: c++: linker input file unused because linking not done
+cc: error: c++: linker input file not found: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTC_86e8e.dir/build.make:78: CMakeFiles/cmTC_86e8e.dir/src.c.o] Error 1
+gmake[1]: *** Deleting file 'CMakeFiles/cmTC_86e8e.dir/src.c.o'
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_86e8e/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS__c++ failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ea8dc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ea8dc.dir/build.make CMakeFiles/cmTC_ea8dc.dir/build
+gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ea8dc.dir/src.cxx.o
+/usr/bin/c++   -DCXX_COMPILER_SUPPORTS__c++ c++ -o CMakeFiles/cmTC_ea8dc.dir/src.cxx.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+c++: warning: c++: linker input file unused because linking not done
+c++: error: c++: linker input file not found: No such file or directory
+gmake[1]: *** [CMakeFiles/cmTC_ea8dc.dir/build.make:78: CMakeFiles/cmTC_ea8dc.dir/src.cxx.o] Error 1
+gmake[1]: *** Deleting file 'CMakeFiles/cmTC_ea8dc.dir/src.cxx.o'
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_ea8dc/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS__-std=c++17 failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e1406/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e1406.dir/build.make CMakeFiles/cmTC_e1406.dir/build
+gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1406.dir/src.c.o
+/usr/bin/cc   -DC_COMPILER_SUPPORTS__-std=c++17 -std=c++17 -o CMakeFiles/cmTC_e1406.dir/src.c.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option '-std=c++17' is valid for C++/ObjC++ but not for C
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_e1406
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1406.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_e1406.dir/src.c.o -o cmTC_e1406 
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS__-std=c++17 failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f1cbd/fast && gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_f1cbd.dir/build.make CMakeFiles/cmTC_f1cbd.dir/build
+gmake[2]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1cbd.dir/src.c.o
+/usr/bin/cc   -DC_COMPILER_SUPPORTS__-std=c++17 -std=c++17 -o CMakeFiles/cmTC_f1cbd.dir/src.c.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option '-std=c++17' is valid for C++/ObjC++ but not for C
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_f1cbd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1cbd.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_f1cbd.dir/src.c.o -o cmTC_f1cbd 
+gmake[2]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS__-std=c++17 failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_70d12/fast && gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_70d12.dir/build.make CMakeFiles/cmTC_70d12.dir/build
+gmake[2]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_70d12.dir/src.c.o
+/usr/bin/cc   -DC_COMPILER_SUPPORTS__-std=c++17 -std=c++17 -o CMakeFiles/cmTC_70d12.dir/src.c.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option '-std=c++17' is valid for C++/ObjC++ but not for C
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_70d12
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70d12.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_70d12.dir/src.c.o -o cmTC_70d12 
+gmake[2]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_COMPILER_SUPPORTS__-std=c++17 failed with the following output:
+Change Dir: /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_98f88/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_98f88.dir/build.make CMakeFiles/cmTC_98f88.dir/build
+gmake[1]: Entering directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98f88.dir/src.c.o
+/usr/bin/cc   -DC_COMPILER_SUPPORTS__-std=c++17 -std=c++17 -o CMakeFiles/cmTC_98f88.dir/src.c.o -c /home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option '-std=c++17' is valid for C++/ObjC++ but not for C
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_98f88
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98f88.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_98f88.dir/src.c.o -o cmTC_98f88 
+gmake[1]: Leaving directory '/home/captainnothing/OpenROAD/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }

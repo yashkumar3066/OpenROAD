@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/captainnothing/OpenROAD/src/sta/app/StaApp.i
+Exception.i
+/home/captainnothing/OpenROAD/src/sta/app/Exception.i
+StaTclTypes.i
+/home/captainnothing/OpenROAD/src/sta/app/StaTclTypes.i
+StaTcl.i
+/home/captainnothing/OpenROAD/src/sta/app/StaTcl.i
+Verilog.i
+/home/captainnothing/OpenROAD/src/sta/app/Verilog.i
+NetworkEdit.i
+/home/captainnothing/OpenROAD/src/sta/app/NetworkEdit.i
+Sdf.i
+/home/captainnothing/OpenROAD/src/sta/app/Sdf.i
+DelayCalc.i
+/home/captainnothing/OpenROAD/src/sta/app/DelayCalc.i
+Parasitics.i
+/home/captainnothing/OpenROAD/src/sta/app/Parasitics.i
+Power.i
+/home/captainnothing/OpenROAD/src/sta/app/Power.i
+

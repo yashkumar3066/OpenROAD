@@ -1,0 +1,2 @@
+/usr/bin/ar qc _rmp_py.a "CMakeFiles/rmp_py.dir/CMakeFiles/rmp_py.dir/rmp-pyPYTHON_wrap.cxx.o" "CMakeFiles/rmp_py.dir/rmp_py-pythonInitVar.cc.o"
+/usr/bin/ranlib _rmp_py.a

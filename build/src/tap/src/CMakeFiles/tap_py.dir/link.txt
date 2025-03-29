@@ -1,0 +1,2 @@
+/usr/bin/ar qc _tap_py.a "CMakeFiles/tap_py.dir/CMakeFiles/tap_py.dir/tapcell-pyPYTHON_wrap.cxx.o" "CMakeFiles/tap_py.dir/tap_py-pythonInitVar.cc.o"
+/usr/bin/ranlib _tap_py.a

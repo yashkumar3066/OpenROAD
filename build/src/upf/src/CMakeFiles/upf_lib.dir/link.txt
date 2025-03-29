@@ -1,0 +1,2 @@
+/usr/bin/ar qc libupf_lib.a CMakeFiles/upf_lib.dir/upf.cpp.o CMakeFiles/upf_lib.dir/writer.cpp.o
+/usr/bin/ranlib libupf_lib.a

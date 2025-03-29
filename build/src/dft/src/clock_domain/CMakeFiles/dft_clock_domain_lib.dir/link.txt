@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdft_clock_domain_lib.a CMakeFiles/dft_clock_domain_lib.dir/ClockDomain.cpp.o
+/usr/bin/ranlib libdft_clock_domain_lib.a

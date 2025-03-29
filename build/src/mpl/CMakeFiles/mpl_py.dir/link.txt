@@ -1,0 +1,2 @@
+/usr/bin/ar qc _mpl_py.a "CMakeFiles/mpl_py.dir/CMakeFiles/mpl_py.dir/MacroPlacer-pyPYTHON_wrap.cxx.o" "CMakeFiles/mpl_py.dir/mpl_py-pythonInitVar.cc.o"
+/usr/bin/ranlib _mpl_py.a
