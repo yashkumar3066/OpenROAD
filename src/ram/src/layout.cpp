@@ -58,6 +58,7 @@ Element::Element(std::unique_ptr<Layout> layout) : layout_(std::move(layout))
 
 Rect Element::position(Point origin)
 {
+  positioned_origin_ = origin;  // Store the origin used for positioning
   if (inst_) {
     inst_->setLocation(origin.getX(), origin.getY());
     inst_->setPlacementStatus(odb::dbPlacementStatus::PLACED);
@@ -69,24 +70,48 @@ Rect Element::position(Point origin)
 
 ////////////////////////////////////////////////////////////////
 
-Layout::Layout(odb::Orientation2D orientation) : orientation_(orientation)
+Layout::Layout(odb::Orientation2D orientation, 
+               double x_offset_microns, double y_offset_microns,
+               double x_spacing_microns, double y_spacing_microns)
+    : orientation_(orientation),
+      x_offset_(static_cast<int>(x_offset_microns * DBU_PER_MICRON)),
+      y_offset_(static_cast<int>(y_offset_microns * DBU_PER_MICRON)),
+      x_spacing_(static_cast<int>(x_spacing_microns * DBU_PER_MICRON)),
+      y_spacing_(static_cast<int>(y_spacing_microns * DBU_PER_MICRON))
 {
+}
+
+void Layout::setOffset(double x_offset_microns, double y_offset_microns)
+{
+  x_offset_ = static_cast<int>(x_offset_microns * DBU_PER_MICRON);
+  y_offset_ = static_cast<int>(y_offset_microns * DBU_PER_MICRON);
+}
+
+void Layout::setSpacing(double x_spacing_microns, double y_spacing_microns)
+{
+  x_spacing_ = static_cast<int>(x_spacing_microns * DBU_PER_MICRON);
+  y_spacing_ = static_cast<int>(y_spacing_microns * DBU_PER_MICRON);
 }
 
 Rect Layout::position(Point origin)
 {
+  // Apply offset to the origin before positioning elements
+  origin = Point(origin.getX() + x_offset_, origin.getY() + y_offset_);
+  
   Rect bbox(origin, origin);
   if (orientation_ == odb::horizontal) {
     for (auto& elem : elements_) {
       auto bounds = elem->position(origin);
       bbox.merge(bounds);
-      origin = bbox.lr();
+      // Move origin to the right edge of current element plus spacing
+      origin = Point(bounds.xMax() + x_spacing_, origin.getY());
     }
   } else {
     for (auto& elem : elements_) {
       auto bounds = elem->position(origin);
       bbox.merge(bounds);
-      origin = bbox.ul();
+      // Move origin to the top edge of current element plus spacing
+      origin = Point(origin.getX(), bounds.yMax() + y_spacing_);
     }
   }
   return bbox;

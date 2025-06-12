@@ -2,19 +2,19 @@
 
 #include <functional>
 #include <memory>
-#include <map>  // For storing different AND gate masters
+#include <map>
 #include <vector>
 #include <array>
 #include "odb/db.h"
-#include "sta/FuncExpr.hh"  // For sta::FuncExpr
-#include "sta/Liberty.hh"   // For sta::LibertyPort and sta::LibertyCell
-#include "sta/PortDirection.hh"  // For sta::PortDirection
+#include "sta/FuncExpr.hh"
+#include "sta/Liberty.hh"
+#include "sta/PortDirection.hh"
 #include "utl/Logger.h"
-#include "../../src/layout.h" // Include the layout header
+#include "../src/layout.h"
 
 namespace odb {
 class dbMaster;
-class dbNet;  // Forward declaration of dbNet
+class dbNet;
 }
 
 namespace sta {
@@ -22,7 +22,7 @@ class dbNetwork;
 class LibertyPort;
 class LibertyCell;
 class PortDirection;
-}  // namespace sta
+}
 
 namespace ram {
 
@@ -41,6 +41,7 @@ class RamGen
                 odb::dbMaster* storage_cell,
                 odb::dbMaster* tristate_cell,
                 odb::dbMaster* inv_cell,
+                odb::dbMaster* buf_cell,
                 bool mask);
 
  private:
@@ -70,22 +71,15 @@ class RamGen
       const std::vector<std::array<odb::dbNet*, 8>>& data_output,
       bool mask);
 
-  // Generic buffer creation
-    std::unique_ptr<Element> make_buffer(
-      const std::string& prefix,
-      const std::vector<odb::dbNet*>& input_nets,
-      const std::vector<odb::dbNet*>& output_nets,
-      odb::Orientation2D orientation); // Add orientation
+  // Removed generic make_buffer function
 
-
-  // Decoder builder for 2-to-4 and 3-to-8 decoders
   std::vector<odb::dbNet*> buildDecoder(Layout& layout, const std::vector<odb::dbNet*>& address_nets, int word_count);
 
   odb::dbMaster* getAndGate(int num_inputs);
   bool isAndGate(sta::LibertyPort* port, int num_inputs);
   bool isAndGateFunction(sta::FuncExpr* expr, int& inputs_count);
 
-  void findMasters();
+  void findMasters(); // Finds AND, ClockGate
   odb::dbMaster* findMaster(const std::function<bool(sta::LibertyPort*)>& match,
                             const char* name);
 
@@ -99,11 +93,12 @@ class RamGen
   odb::dbMaster* inv_cell_;
   odb::dbMaster* and2_cell_;
   odb::dbMaster* clock_gate_cell_;
+  odb::dbMaster* buf_cell_;
 
-  int gate_counter_;   // Counter for unique gate instances
-  int net_counter_;    // Counter for unique net instances
-  int max_and_inputs_; // Maximum number of inputs an AND gate can have
-  std::map<int, odb::dbMaster*> and_cells_; // Map to store AND gate masters by number of inputs
+  int gate_counter_;
+  int net_counter_;
+  int max_and_inputs_;
+  std::map<int, odb::dbMaster*> and_cells_;
 };
 
 }  // namespace ram

@@ -12,10 +12,13 @@ generate_ram_netlist \
     -storage_cell sky130_fd_sc_hd__dlxtp_1 \
     -tristate_cell sky130_fd_sc_hd__ebufn_2 \
     -inv_cell sky130_fd_sc_hd__inv_1 \
+    -buf_cell sky130_fd_sc_hd__buf_1 \
     -mask 1
 
 ord::design_created
-
+gui::show
+report_design_area
+report_power
 set def_file [make_result_file make_8x8.def]
 write_def $def_file
 diff_files make_8x8.defok $def_file

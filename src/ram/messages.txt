@@ -1,19 +1,27 @@
-RAM 0001 ram.tcl:50                The -bytes_per_word argument must be specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L50
-RAM 0002 ram.tcl:55                The -word_count argument must be specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L55
-RAM 0003 ram.tcl:66                The -storage_cell argument must be specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L66
-RAM 0004 ram.tcl:71                The -tristate_cell argument must be specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L71
-RAM 0005 ram.tcl:76                The -inv_cell argument must be specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L76
-RAM 0006 ram.cpp:216               Generating {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L216
-RAM 0007 ram.i:106                 Tristate cell {} can't be found ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.i#L106
-RAM 0009 ram.cpp:57                term {} of cell {} not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L57
-RAM 0010 ram.cpp:596               Can't find {} cell ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L596
-RAM 0011 ram.i:89                  Storage cell {} can't be found ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.i#L89
-RAM 0012 ram.cpp:461               Unsupported decoder configuration (word_count = {}). Only 4 or 8 words are supported. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L461
-RAM 0014 ram.i:96                  Storage cell name must be provided. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.i#L96
-RAM 0015 ram.i:113                 Tristate cell name must be provided. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.i#L113
-RAM 0016 ram.cpp:598               Selected {} cell {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L598
-RAM 0019 ram.i:123                 Inverter cell {} can't be found ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.i#L123
-RAM 0020 ram.i:130                 Inverter cell name must be provided. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.i#L130
-RAM 0021 ram.i:78                  Only 4 or 8 words are supported. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.i#L78
-RAM 0022 ram.tcl:61                Only 4 or 8 words are supported. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L61
-RAM 0100 ram.cpp:179               Input and output net count mismatch in make_buffer ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L179
+RAM 0001 ram.tcl:19                The -bytes_per_word argument must be specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L19
+RAM 0002 ram.tcl:22                The -word_count argument must be specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L22
+RAM 0003 ram.tcl:27                The -storage_cell argument must be specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L27
+RAM 0004 ram.tcl:30                The -tristate_cell argument must be specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L30
+RAM 0005 ram.tcl:33                The -inv_cell argument must be specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L33
+RAM 0006 ram.cpp:194               Generating {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L194
+RAM 0007 ram.i:62                  Tristate cell {} can't be found ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.i#L62
+RAM 0009 ram.cpp:76                MTerm {} of cell {} not found. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L76
+RAM 0010 ram.cpp:497               Can't find {} cell ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L497
+RAM 0011 ram.i:56                  Storage cell {} can't be found ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.i#L56
+RAM 0012 ram.cpp:419               Unsupported decoder configuration (word_count = {}). Only 4 or 8 words are supported. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L419
+RAM 0016 ram.cpp:499               Selected {} cell {} INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L499
+RAM 0019 ram.i:68                  Inverter cell {} can't be found ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.i#L68
+RAM 0021 ram.i:49                  Only 4 or 8 words are supported. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.i#L49
+RAM 0022 ram.tcl:25                Only 4 or 8 words are supported. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L25
+RAM 0101 ram.cpp:62                Failed to create instance: {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L62
+RAM 0102 ram.cpp:81                ITerm for MTerm {} not found on instance {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L81
+RAM 0105 ram.cpp:460               Requested AND gate with {} inputs, but only 2-input is supported. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L460
+RAM 0106 ram.i:75                  Buffer cell {} can't be found ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.i#L75
+RAM 0107 ram.tcl:37                The -buf_cell argument must be specified. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.tcl#L37
+RAM 0108 ram.cpp:57                Attempted to create instance {} with null master. ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L57
+RAM 0109 ram.cpp:170               Index out of bounds accessing data_output in make_byte for prefix {} read_port {} bit {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L170
+RAM 0111 ram.cpp:85                Attempted to connect null net to MTerm {} of instance {} ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L85
+RAM 0112 ram.cpp:127               Index out of bounds for select net in make_bit (read_port={}) ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L127
+RAM 0113 ram.cpp:131               Index out of bounds for data_output net in make_bit (read_port={}) ERROR https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L131
+RAM 0140 ram.cpp:67                Before placement - Instance {}: master={}, location=({},{}), bbox=({},{})-({},{}) INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L67
+RAM 0141 ram.cpp:94                After placement - Instance {}: location=({},{}), bbox=({},{})-({},{}) INFO https://github.com/The-OpenROAD-Project/OpenROAD/tree/master/home/captainnothing/OpenROAD/src/ram/src/ram.cpp#L94

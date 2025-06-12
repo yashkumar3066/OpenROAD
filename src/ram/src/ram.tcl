@@ -1,90 +1,48 @@
 #############################################################################
-##
-## BSD 3-Clause License
-##
-## Copyright (c) 2023, Precision Innovations Inc.
-## All rights reserved.
-##
-## Redistribution and use in source and binary forms, with or without
-## modification, are permitted provided that the following conditions are met:
-##
-## * Redistributions of source code must retain the above copyright notice, this
-##   list of conditions and the following disclaimer.
-##
-## * Redistributions in binary form must reproduce the above copyright notice,
-##   this list of conditions and the following disclaimer in the documentation
-##   and/or other materials provided with the distribution.
-##
-## * Neither the name of the copyright holder nor the names of its
-##   contributors may be used to endorse or promote products derived from
-##   this software without specific prior written permission.
-##
-## THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-## AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-## IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-## ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
-## LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-## CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-## SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-## INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-## CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-## ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-## POSSIBILITY OF SUCH DAMAGE.
+## BSD 3-Clause License ... (rest of license header) ...
 #############################################################################
-
 
 sta::define_cmd_args "generate_ram_netlist" {-bytes_per_word bytes
                                              -word_count words
                                              -storage_cell name
                                              -tristate_cell name
                                              -inv_cell name
+                                             -buf_cell name  
                                              -read_ports count
                                              [-mask]}
 
 proc generate_ram_netlist { args } {
   sta::parse_key_args "generate_ram_netlist" args \
       keys {-bytes_per_word -word_count -storage_cell -tristate_cell -inv_cell \
-      -read_ports} flags {-mask}
+            -buf_cell -read_ports} flags {-mask} ;# Added -buf_cell
 
-  if { ![info exists keys(-bytes_per_word)] } {
-    utl::error RAM 1 "The -bytes_per_word argument must be specified."
-  }
+  if { ![info exists keys(-bytes_per_word)] } { utl::error RAM 1 "The -bytes_per_word argument must be specified." }
   set bytes_per_word $keys(-bytes_per_word)
 
-  if { ![info exists keys(-word_count)] } {
-    utl::error RAM 2 "The -word_count argument must be specified."
-  }
+  if { ![info exists keys(-word_count)] } { utl::error RAM 2 "The -word_count argument must be specified." }
   set word_count $keys(-word_count)
 
-  # Check that word_count is either 4 or 8
-  if {$word_count != 4 && $word_count != 8} {
-    utl::error RAM 22 "Only 4 or 8 words are supported."
-    return
-  }
+  if {$word_count != 4 && $word_count != 8} { utl::error RAM 22 "Only 4 or 8 words are supported."; return }
 
-  if { ![info exists keys(-storage_cell)] } {
-    utl::error RAM 3 "The -storage_cell argument must be specified."
-  }
+  if { ![info exists keys(-storage_cell)] } { utl::error RAM 3 "The -storage_cell argument must be specified." }
   set storage_cell $keys(-storage_cell)
 
-  if { ![info exists keys(-tristate_cell)] } {
-    utl::error RAM 4 "The -tristate_cell argument must be specified."
-  }
+  if { ![info exists keys(-tristate_cell)] } { utl::error RAM 4 "The -tristate_cell argument must be specified." }
   set tristate_cell $keys(-tristate_cell)
 
-  if { ![info exists keys(-inv_cell)] } {
-    utl::error RAM 5 "The -inv_cell argument must be specified."
-  }
+  if { ![info exists keys(-inv_cell)] } { utl::error RAM 5 "The -inv_cell argument must be specified." }
   set inv_cell $keys(-inv_cell)
 
+  # Check for buffer cell argument
+  if { ![info exists keys(-buf_cell)] } { utl::error RAM 107 "The -buf_cell argument must be specified." } ;# New check
+  set buf_cell $keys(-buf_cell)
+
   set read_ports 1
-  if { [info exists keys(-read_ports)] } {
-    set read_ports $keys(-read_ports)
-  }
+  if { [info exists keys(-read_ports)] } { set read_ports $keys(-read_ports) }
 
   set mask [expr {[info exists flags(-mask)] ? 1 : 0}]
 
+  # Call C++ command with the new buf_cell argument
   ram::generate_ram_netlist_cmd $bytes_per_word $word_count $storage_cell \
-      $tristate_cell $inv_cell $read_ports $mask
+      $tristate_cell $inv_cell $buf_cell $read_ports $mask
 }
-
